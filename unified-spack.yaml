@@ -1,0 +1,41 @@
+spack:
+  config:
+    deprecated: true
+  include:
+  # Compiler toolchain
+  - /home/knoepfel/experiment-configs/gcc-12-toolchain.yaml
+  # Packages
+  - /home/knoepfel/experiment-configs/packages-dune.yaml
+  - /home/knoepfel/experiment-configs/packages-larsoft.yaml
+  - /home/knoepfel/experiment-configs/packages-nulite.yaml
+  - /home/knoepfel/experiment-configs/packages-art.yaml
+  # Specs
+  - /home/knoepfel/experiment-configs/specs-dune.yaml
+  - /home/knoepfel/experiment-configs/specs-larsoft.yaml
+  - /home/knoepfel/experiment-configs/specs-nulite.yaml
+  - /home/knoepfel/experiment-configs/specs-art.yaml
+  specs:
+  - $specs_art
+  - $specs_nulite
+  - $specs_larsoft
+  - $specs_dune
+  concretizer:
+    unify: true
+    reuse:
+      from:
+      - type: local
+      - type: external
+  view: false
+  packages:
+    all:
+      providers:
+        libc:
+        - glibc
+        'zlib-api:':
+        - zlib
+      variants:
+      - generator=ninja
+      - build_type=Release
+      - cxxstd=17
+      target:
+      - x86_64_v3
