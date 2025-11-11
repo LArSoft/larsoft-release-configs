@@ -2,23 +2,39 @@ spack:
   config:
     deprecated: true
   include:
-  # Compiler toolchain
-  - /home/knoepfel/experiment-configs/gcc-12-toolchain.yaml
+  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/gcc-12-toolchain.yaml
+    sha256: b769ddee1cff92c88b22cc968bc192a37d5fe863e6e224aeac5697a89480c5ca
   # Packages
-  - /home/knoepfel/experiment-configs/packages-dune.yaml
-  - /home/knoepfel/experiment-configs/packages-larsoft.yaml
-  - /home/knoepfel/experiment-configs/packages-nulite.yaml
-  - /home/knoepfel/experiment-configs/packages-art.yaml
-  # Specs
-  - /home/knoepfel/experiment-configs/specs-dune.yaml
-  - /home/knoepfel/experiment-configs/specs-larsoft.yaml
-  - /home/knoepfel/experiment-configs/specs-nulite.yaml
-  - /home/knoepfel/experiment-configs/specs-art.yaml
+  - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/packages-larsoft.yaml
+    sha256: 22943d620054f50b6dd52eb1614c8f452934532aa873b1944f0c59b1dafe0ccf
+  - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/packages-nusofthep.yaml
+    sha256: fa0629df244686c907180b7896c08a250eebb4dd31e81490f4481544e96c7db7
+  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
+    sha256: 32bfd398fcb27780263e6d593decbad885995b43852ccaf15788d82c7aed49de
+  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_packages.yaml
+    sha256: 57a08c8d8240cf4b04249d93c5c21e2d014b046c5d55b5550a11856f94344738
+  #  # Specs
+  - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/specs-larsoft.yaml
+    sha256: a3d4c8646e15a02b284150fe67c9d582ef73c3c4a70f58cc17cbb40334af5752
+  - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/specs-nusofthep.yaml
+    sha256: 28c6fee7d86583521e16d13772bfa0c44f021dae7e6098bb17c71d4a48e074cb
+  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/specs-art.yaml
+    sha256: 16e776ee6fea578385fe5ccfd67924fdb442f9219ea0cf3beaad5f6a211b7281
+  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_specs.yaml
+    sha256: 98eca35ee2c73f430eba2504b5b3dffac307fdde5a65fa6796b52b78530ac035
   specs:
   - $specs_art
-  - $specs_nulite
+  - $specs_nusofthep
   - $specs_larsoft
-  - $specs_dune
+  - $fife_specs
+  - dune-sw %build_compiler
+  - icaruscode %build_compiler
+  - sbncode %build_compiler
+  - sbndcode %build_compiler
+  - justin 
+  - py-srproxy
+  - highfive
+  - hdf5@1.12.2
   concretizer:
     unify: true
     reuse:
