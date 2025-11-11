@@ -1,7 +1,7 @@
 packages:
   larana:
     require:
-    - '@=10.00.24'
+    - '@=10.01.00'
   larcore:
     require:
     - '@=10.00.03'
@@ -13,60 +13,54 @@ packages:
     - '@=10.00.00'
   lardata:
     require:
-    - '@=10.00.11'
+    - '@=10.00.12'
   lardataalg:
     require:
-    - '@=10.01.02'
+    - '@=10.01.03'
   lardataobj:
     require:
-    - '@=10.02.01'
+    - '@=10.03.00'
   lareventdisplay:
     require:
-    - '@=10.00.23'
+    - '@=10.00.27'
   larevt:
     require:
-    - '@=10.00.12'
+    - '@=10.00.14'
   larexamples:
     require:
-    - '@=10.00.20'
-  larfinder:
-    require:
-    - '@=09.00.04'
+    - '@=10.00.23'
   larg4:
     require:
-    - '@=10.00.13'
+    - '@=10.01.00'
   larpandora:
     require:
-    - '@=10.00.27'
+    - '@=10.01.00'
   larpandoracontent:
     require:
-    - '@=04.16.00'
+    - '@=04.17.02'
   larreco:
     require:
-    - '@=10.02.03'
+    - '@=10.02.07'
   larrecodnn:
     require:
-    - '@=10.01.18'
+    - '@=10.01.22'
   larsim:
     require:
-    - '@=10.07.02'
+    - '@=10.07.05'
   larsimdnn:
     require:
-    - '@=10.00.19'
+    - '@=10.01.01'
   larsimrad:
     require:
-    - '@=10.00.20'
+    - '@=10.00.23'
   larsoft:
     require:
-    - '@=10.10.02'
+    - '@=10.11.01'
   larwirecell:
     require:
-    - '@=10.01.19'
+    - '@=10.01.22'
 
   # LArSoft dependencies
-  cry:
-    require:
-    - '@=1.7'
   marley:
     require:
     - '@=1.2.1'
@@ -76,11 +70,3 @@ packages:
     require:
     - '@=0.30.7'
     #- '^spdlog@1.13'
-  py-torch:
-    # My first attempt at concretizing resulted in a py-torch version of 1.12, which is way too old to be buildable.
-    # Somewhere a recipe needs to be changed, but I'm not sure where.
-    require:
-    - '@2.7:'
-  py-tensorflow:
-    require:
-    - '@=2.17.1'
