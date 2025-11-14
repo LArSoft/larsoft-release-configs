@@ -10,7 +10,7 @@ spack:
   # Packages defintions.
   # These are version and variant requirements for a package suite
   - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/packages-larsoft.yaml
-    sha256: cbd0229af81a74d351f2c3aa9680b0b1e6a01d3ef6bc7e294d47d27f37c60d3a
+    sha256: 79189dce1ceee3db1672da87b2af878c113f28f5041e7b29f4ff755d9a017f94
   - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/packages-nusofthep.yaml
     sha256: fa0629df244686c907180b7896c08a250eebb4dd31e81490f4481544e96c7db7
   - path: https://raw.githubusercontent.com/gartung/art-release-configs/refs/heads/main/included_yaml/packages-art.yaml
