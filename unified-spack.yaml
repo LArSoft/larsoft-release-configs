@@ -13,13 +13,13 @@ spack:
     sha256: 79189dce1ceee3db1672da87b2af878c113f28f5041e7b29f4ff755d9a017f94
   - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/packages-nusofthep.yaml
     sha256: fa0629df244686c907180b7896c08a250eebb4dd31e81490f4481544e96c7db7
-  - path: https://raw.githubusercontent.com/gartung/art-release-configs/refs/heads/main/included_yaml/packages-art.yaml
+  - path: https://raw.githubusercontent.com/gartung/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
     sha256: 752ba285553697642cab879930c5a5fd648c6c0db8d8bcab069a284e0578a8b9
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_packages.yaml
     sha256: 57a08c8d8240cf4b04249d93c5c21e2d014b046c5d55b5550a11856f94344738
 
 #  - DUNE example
-#  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/heads/main/packages-dune.yaml
+#  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/heads/develop/packages-dune.yaml
 #  - sha256: ... 
 
   # Spec definitions.
@@ -34,7 +34,7 @@ spack:
     sha256: 98eca35ee2c73f430eba2504b5b3dffac307fdde5a65fa6796b52b78530ac035
 
 #  - DUNE example
-#  - path:  https://raw.githubusercontent.com/DUNE/dune-release-configs/refs/heads/main/specs-dune.yaml
+#  - path:  https://raw.githubusercontent.com/DUNE/dune-release-configs/refs/heads/develop/specs-dune.yaml
 #    sha256: ...
 #
   definitions:
