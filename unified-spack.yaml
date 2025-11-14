@@ -2,18 +2,28 @@ spack:
   config:
     deprecated: true
   include:
+  # Toolchain defintion.
+  # Defines the compiler (gcc or llvm/clang) and version.
   - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/gcc-12-toolchain.yaml
     sha256: b769ddee1cff92c88b22cc968bc192a37d5fe863e6e224aeac5697a89480c5ca
-  # Packages
+
+  # Packages defintions.
+  # These are version and variant requirements for a package suite
   - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/packages-larsoft.yaml
     sha256: 22943d620054f50b6dd52eb1614c8f452934532aa873b1944f0c59b1dafe0ccf
   - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/packages-nusofthep.yaml
     sha256: fa0629df244686c907180b7896c08a250eebb4dd31e81490f4481544e96c7db7
-  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
-    sha256: 32bfd398fcb27780263e6d593decbad885995b43852ccaf15788d82c7aed49de
+  - path: https://raw.githubusercontent.com/gartung/art-release-configs/refs/heads/main/included_yaml/packages-art.yaml
+    sha256: 752ba285553697642cab879930c5a5fd648c6c0db8d8bcab069a284e0578a8b9
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_packages.yaml
     sha256: 57a08c8d8240cf4b04249d93c5c21e2d014b046c5d55b5550a11856f94344738
-  #  # Specs
+
+#  - DUNE example
+#  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/tree/develop/packages-dune.yaml
+#  - sha256: ... 
+
+  # Spec definitions.
+  # These are definitions of the root specs for a package suite
   - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/specs-larsoft.yaml
     sha256: a3d4c8646e15a02b284150fe67c9d582ef73c3c4a70f58cc17cbb40334af5752
   - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/specs-nusofthep.yaml
@@ -22,19 +32,45 @@ spack:
     sha256: 16e776ee6fea578385fe5ccfd67924fdb442f9219ea0cf3beaad5f6a211b7281
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_specs.yaml
     sha256: 98eca35ee2c73f430eba2504b5b3dffac307fdde5a65fa6796b52b78530ac035
+
+#  - DUNE example
+#  - path:  https://raw.githubusercontent.com/DUNE/dune-release-configs/tree/develop/specs-dune.yaml
+#    sha256: ...
+#
+  definitions:
+# These are common link dependencies needed by various experiment packages
+  - common_dep_specs:
+      - py-srproxy
+      - highfive
+      - hdf5@1.12.2
+# These are common runtime dependencies needed by various experiment packages
+#   Justin is DUNE specific but is included because its dependencies affect the LArSoft stack
+      - justin 
+
+# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
+# and the path:(urls) and sha256: included above.
+#
+# These are placeholders
+  - dune_specs:
+      -  dunesw@develop %build_compiler
+  - icarus_specs:
+      -  icaruscode@develop %build_compiler
+  - sbn_specs:
+      -  sbn@develop %build_compiler
+  - sbnd_specs:
+      -  sbnd@develop %build_compiler
+
   specs:
-  - $specs_art
-  - $specs_nusofthep
-  - $specs_larsoft
-  - $fife_specs
-  - dune-sw %build_compiler
-  - icaruscode %build_compiler
-  - sbncode %build_compiler
-  - sbndcode %build_compiler
-  - justin 
-  - py-srproxy
-  - highfive
-  - hdf5@1.12.2
+    - $specs_art
+    - $specs_nusofthep
+    - $specs_larsoft
+    - $fife_specs
+    - $dune_specs
+    - $icarus_specs
+    - $sbn_specs
+    - $sbnd_specs
+    - $common_dep_specs
+
   concretizer:
     unify: true
     reuse:
