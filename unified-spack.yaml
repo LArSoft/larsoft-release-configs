@@ -56,9 +56,9 @@ spack:
   - icarus_specs:
       -  icaruscode@develop %build_compiler
   - sbn_specs:
-      -  sbn@develop %build_compiler
+      -  sbncode@develop %build_compiler
   - sbnd_specs:
-      -  sbnd@develop %build_compiler
+      -  sbndcode@develop %build_compiler
 
   specs:
     - $specs_art
