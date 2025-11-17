@@ -14,7 +14,7 @@ spack:
   - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/packages-nusofthep.yaml
     sha256: a25e85eb228fe1744f575f94664d3eafe03cc3cac5e8399906ecb5007d09c618
   - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
-    sha256: 752ba285553697642cab879930c5a5fd648c6c0db8d8bcab069a284e0578a8b9
+    sha256: 32bfd398fcb27780263e6d593decbad885995b43852ccaf15788d82c7aed49de
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_packages.yaml
     sha256: 57a08c8d8240cf4b04249d93c5c21e2d014b046c5d55b5550a11856f94344738
 
