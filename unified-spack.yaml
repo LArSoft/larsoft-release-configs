@@ -52,13 +52,13 @@ spack:
 #
 # These are placeholders
   - dune_specs:
-      -  dune-sw@develop %build_compiler
+      -  dune-sw %build_compiler
   - icarus_specs:
-      -  icaruscode@develop %build_compiler
+      -  icaruscode %build_compiler
   - sbn_specs:
-      -  sbncode@develop %build_compiler
+      -  sbncode %build_compiler
   - sbnd_specs:
-      -  sbndcode@develop %build_compiler
+      -  sbndcode %build_compiler
 
   specs:
     - $specs_art
