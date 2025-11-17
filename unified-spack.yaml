@@ -12,7 +12,7 @@ spack:
   - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/packages-larsoft.yaml
     sha256: 79189dce1ceee3db1672da87b2af878c113f28f5041e7b29f4ff755d9a017f94
   - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/packages-nusofthep.yaml
-    sha256: 2cb4a917693c9140daa081f9b4dc637b4480451ee624acff351446d7aa22f968
+    sha256: a25e85eb228fe1744f575f94664d3eafe03cc3cac5e8399906ecb5007d09c618
   - path: https://raw.githubusercontent.com/gartung/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
     sha256: 752ba285553697642cab879930c5a5fd648c6c0db8d8bcab069a284e0578a8b9
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_packages.yaml
