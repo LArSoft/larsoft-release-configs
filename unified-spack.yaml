@@ -15,8 +15,8 @@ spack:
     sha256: a25e85eb228fe1744f575f94664d3eafe03cc3cac5e8399906ecb5007d09c618
   - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
     sha256: 32bfd398fcb27780263e6d593decbad885995b43852ccaf15788d82c7aed49de
-  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_packages.yaml
-    sha256: 57a08c8d8240cf4b04249d93c5c21e2d014b046c5d55b5550a11856f94344738
+  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.1/included_yaml/fife_packages.yaml
+    sha256: db6b29551f8a94ffab1ca7f3457ba9da47da5d4fa9b62f6ba2b81ea660118bcb
 
 #  - DUNE example
 #  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/heads/develop/packages-dune.yaml
@@ -30,8 +30,8 @@ spack:
     sha256: 28c6fee7d86583521e16d13772bfa0c44f021dae7e6098bb17c71d4a48e074cb
   - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/specs-art.yaml
     sha256: 16e776ee6fea578385fe5ccfd67924fdb442f9219ea0cf3beaad5f6a211b7281
-  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.0/included_yaml/fife_specs.yaml
-    sha256: 98eca35ee2c73f430eba2504b5b3dffac307fdde5a65fa6796b52b78530ac035
+  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.1/included_yaml/fife_specs.yaml
+    sha256: 080dececfa749775969fe1f8b94ec8779c8143b5939aaf0f83390303c39ff110
 
 #  - DUNE example
 #  - path:  https://raw.githubusercontent.com/DUNE/dune-release-configs/refs/heads/develop/specs-dune.yaml
@@ -61,9 +61,9 @@ spack:
       -  sbndcode %build_compiler
 
   specs:
-    - $specs_art
-    - $specs_nusofthep
-    - $specs_larsoft
+    #    - $specs_art
+    #    - $specs_nusofthep
+    #    - $specs_larsoft
     - $fife_specs
     - $dune_specs
     - $icarus_specs
