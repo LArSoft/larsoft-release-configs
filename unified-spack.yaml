@@ -42,28 +42,50 @@ spack:
   - common_dep_specs:
       - py-srproxy
       - highfive
-      - hdf5@1.12.2
-# These are common runtime dependencies needed by various experiment packages
-#   Justin is DUNE specific but is included because its dependencies affect the LArSoft stack
-      - justin 
+      - hdf5
 
 # The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
 # and the path:(urls) and sha256: included above.
 #
 # These are placeholders
   - dune_specs:
-      -  dune-sw %build_compiler
+      - dune-sw %build_compiler
+      - dune-ana
+      - dune-ana-obj
+      - dune-calib
+      - dune-core
+      - dune-data-prep
+      - dune-examples
+      - dune-op-det
+      - dune-pd-legacy
+      - dune-prototypes
+      - dune-reco
+      - dune-sim
+      - dune-util
+      - protodune-ana
+      - dune-daq-data-formats
+      - dune-det-data-formats
+      - justin 
   - icarus_specs:
-      -  icaruscode %build_compiler
+      - icaruscode %build_compiler
+      - icarus-data
+      - icarus-signal-processing
+      - icarusalg
+      - icarusutil
   - sbn_specs:
-      -  sbncode %build_compiler
+      - sbncode %build_compiler
+      - sbnanaobj
+      - sbndaq
+      - sbndaq-artdaq
+      - sbndaq-artdaq-core
+      - sbnobj
   - sbnd_specs:
-      -  sbndcode %build_compiler
+      - sbndcode %build_compiler
 
   specs:
-    #    - $specs_art
-    #    - $specs_nusofthep
-    #    - $specs_larsoft
+    - $specs_art
+    - $specs_nusofthep
+    - $specs_larsoft
     - $fife_specs
     - $dune_specs
     - $icarus_specs
