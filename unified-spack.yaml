@@ -75,8 +75,6 @@ spack:
   - sbn_specs:
       - sbncode %build_compiler
       - sbnanaobj
-      - sbndaq
-      - sbndaq-artdaq
       - sbndaq-artdaq-core
       - sbnobj
   - sbnd_specs:
