@@ -71,7 +71,7 @@ spack:
     - $sbn_specs
     - $sbnd_specs
     - $common_dep_specs
-
+    - py-tensorflow+cuda^cuda@12.5
   concretizer:
     unify: true
     reuse:
