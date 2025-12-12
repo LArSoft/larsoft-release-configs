@@ -67,6 +67,8 @@ spack:
     - $sbnd_specs
     - py-tensorflow+cuda^cuda@12.5
     - justin
+    - highfive
+    - py-srproxy
   concretizer:
     unify: true
     reuse:
