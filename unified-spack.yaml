@@ -38,11 +38,6 @@ spack:
     sha256: 2b753507ddb37ae15d6b9bd2bc509c32ce21038c54703b3b53a022f01cc4ac45
 
   definitions:
-# These are common link dependencies needed by various experiment packages
-  - common_dep_specs:
-      - py-srproxy
-      - highfive
-      - hdf5
 
 # The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
 # and the path:(urls) and sha256: included above.
@@ -70,7 +65,6 @@ spack:
     - $icarus_specs
     - $sbn_specs
     - $sbnd_specs
-    - $common_dep_specs
     - py-tensorflow+cuda^cuda@12.5
   concretizer:
     unify: true
