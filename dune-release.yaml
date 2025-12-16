@@ -52,10 +52,6 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
-    - py-tensorflow+cuda^cuda@12.5
-    - justin
-    - highfive
-    - py-srproxy
 
   upstreams:
     cvmfs-larsoft:
