@@ -42,18 +42,13 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
-    - python@3.10
-
-  upstreams:
-    cvmfs-larsoft:
-      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/opt/spack
 
   concretizer:
     unify: true
     reuse:
       from:
-      - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/var/spack/environments/larsoft-v10_11_01-unified-cuda-trimmed/
+      - type: local
+      - type: external
   packages:
     all:
       providers:
