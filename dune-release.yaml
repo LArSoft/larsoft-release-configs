@@ -42,7 +42,6 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
-    - py-tensorflow+cuda^cuda@12.5
 
   concretizer:
     unify: true

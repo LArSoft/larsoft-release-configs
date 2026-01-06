@@ -65,7 +65,6 @@ spack:
     - $icarus_specs
     - $sbn_specs
     - $sbnd_specs
-    - py-tensorflow+cuda^cuda@12.5
   concretizer:
     unify: true
     reuse:
