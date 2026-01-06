@@ -56,7 +56,6 @@ spack:
     - $icarus_specs
     - $sbn_specs
     - $sbnd_specs
-    - py-tensorflow+cuda^cuda@12.5
   upstreams:
     cvmfs-larsoft:
       install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/opt/spack
