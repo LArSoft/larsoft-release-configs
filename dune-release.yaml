@@ -42,6 +42,7 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
+    - python@3.10
 
   concretizer:
     unify: true
