@@ -38,7 +38,7 @@ spack:
 
   specs:
     - $specs_art
-    - $nusofthep_specs
+    - $specs_nusofthep
     - $larsoft_specs
     - $fife_specs
     - $dune_specs
