@@ -51,7 +51,7 @@ spack:
   specs:
     - $specs_art
     - $specs_nusofthep
-    - $larsoft_specs
+    - $specs_larsoft
     - $fife_specs
     - $icarus_specs
     - $sbn_specs
