@@ -49,7 +49,7 @@ spack:
       - sbndcode %build_compiler
 
   specs:
-    - $art_specs
+    - $specs_art
     - $nusofthep_specs
     - $larsoft_specs
     - $fife_specs

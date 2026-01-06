@@ -37,7 +37,7 @@ spack:
     sha256: 2b753507ddb37ae15d6b9bd2bc509c32ce21038c54703b3b53a022f01cc4ac45
 
   specs:
-    - $art_specs
+    - $specs_art
     - $nusofthep_specs
     - $larsoft_specs
     - $fife_specs
