@@ -20,7 +20,7 @@ spack:
 
   # DUNE packages
   - path: https://raw.githubusercontent.com/DUNE/dune-spack-config/refs/heads/main/included_yaml/packages-dune.yaml
-    sha256: f4eb86ed44984314ef7dfa8ea7cc5f6616f4987016d6e36e49dcc24b9cd98573
+    sha256: 9d8cde49c815a4f8e9ca7a7d2f3984cfb6f677072160de61bc2fc36795fb18f1
 
   # Spec definitions.
   # These are definitions of the root specs for a package suite
