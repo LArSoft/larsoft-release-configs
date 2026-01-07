@@ -65,6 +65,7 @@ spack:
     - $icarus_specs
     - $sbn_specs
     - $sbnd_specs
+    - r-m-dd-config
   concretizer:
     unify: true
     reuse:

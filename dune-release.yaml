@@ -46,6 +46,7 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
+    - r-m-dd-config
 
   concretizer:
     unify: true
