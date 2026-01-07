@@ -46,14 +46,13 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
-    - r-m-dd-config
 
   concretizer:
     unify: true
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/var/spack/environments/larsoft-v10_11_01-unified-cuda-trimmed/
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/var/spack/environments/larsoft-v10_11_01-unified-cuda-python-3_10-trimmed
   packages:
     all:
       providers:
