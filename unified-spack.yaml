@@ -66,6 +66,7 @@ spack:
     - $sbn_specs
     - $sbnd_specs
     - r-m-dd-config
+    - py-srproxy
   concretizer:
     unify: true
     reuse:
