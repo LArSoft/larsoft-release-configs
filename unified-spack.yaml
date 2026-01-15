@@ -65,6 +65,7 @@ spack:
     - $icarus_specs
     - $sbn_specs
     - $sbnd_specs
+    - nusystematics
     - r-m-dd-config
     - py-srproxy
   concretizer:
