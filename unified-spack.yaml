@@ -68,6 +68,7 @@ spack:
     - nusystematics
     - r-m-dd-config
     - py-srproxy
+    - python@3.10
     - root~davix+emacs+fftw+http+math+mlp+opengl+postgres+pythia6+root7+spectrum+sqlite+ssl+tmva+tmva-pymva+xrootd
   concretizer:
     unify: true
