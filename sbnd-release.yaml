@@ -44,7 +44,7 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $specs_sbnd
+    - $specs_sbn
 
   upstreams:
     cvmfs-larsoft:

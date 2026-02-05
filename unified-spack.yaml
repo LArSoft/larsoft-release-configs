@@ -61,7 +61,7 @@ spack:
     - $fife_specs
     - $dune_specs
     - $specs_icarus
-    - $specs_sbnd
+    - $specs_sbn
     - nusystematics
     - r-m-dd-config
     - py-srproxy
