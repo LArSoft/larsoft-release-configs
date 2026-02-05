@@ -47,7 +47,7 @@ spack:
 # The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
 # and the path:(urls) and sha256: included above.
 #
-  - icarus_specs:
+  - specs_icarus:
       - icaruscode %build_compiler
       - icarus-data
       - icarus-signal-processing
@@ -60,8 +60,8 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $dune_specs
-    - $icarus_specs
-    - $sbnd_specs
+    - $specs_icarus
+    - $specs_sbnd
     - nusystematics
     - r-m-dd-config
     - py-srproxy
