@@ -34,11 +34,6 @@ spack:
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/heads/main/included_yaml/fife_specs.yaml
     sha256: b0306775ce16510f7d099d597b3e07cd118f0a178362fdaea0273a8b788eca37 
 
-  definitions:
-
-# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
-# and the path:(urls) and sha256: included above.
-#
   specs:
     - $specs_art
     - $specs_nusofthep
