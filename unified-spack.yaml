@@ -10,7 +10,7 @@ spack:
   # Packages defintions.
   # SBNSoftware
   - path: https://raw.githubusercontent.com/SBNSoftware/sbn-release-configs/refs/heads/main/included_yaml/sbn-packages.yaml
-    sha256: af548bec365347dce0bd28b93cf8cb616935bf38e412e104978791b4dca8453e
+    sha256: e4af5bf56accab73105a27932b3f6ded80767c394e664046227780b4a74bd128
   - path: https://raw.githubusercontent.com/SBNSoftware/sbn-release-configs/refs/heads/main/included_yaml/sbn-specs.yaml
     sha256: 4177e283bdc216f8a807fe89a08949d3eb91693265c235f299db22eeed82632f
   # DUNE packages
