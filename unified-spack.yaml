@@ -8,6 +8,11 @@ spack:
     sha256: b769ddee1cff92c88b22cc968bc192a37d5fe863e6e224aeac5697a89480c5ca
 
   # Packages defintions.
+  # SBNSoftware
+  - path: https://raw.githubusercontent.com/SBNSoftware/sbn-release-configs/refs/heads/main/included_yaml/sbn-packages.yaml
+    sha256: af548bec365347dce0bd28b93cf8cb616935bf38e412e104978791b4dca8453e
+  - path: https://raw.githubusercontent.com/SBNSoftware/sbn-release-configs/refs/heads/main/included_yaml/sbn-specs.yaml
+    sha256: 4177e283bdc216f8a807fe89a08949d3eb91693265c235f299db22eeed82632f
   # DUNE packages
   - path: https://raw.githubusercontent.com/DUNE/dune-spack-config/refs/heads/main/included_yaml/packages-dune.yaml
     sha256: 9d8cde49c815a4f8e9ca7a7d2f3984cfb6f677072160de61bc2fc36795fb18f1
@@ -48,13 +53,6 @@ spack:
       - icarus-signal-processing
       - icarusalg
       - icarusutil
-  - sbn_specs:
-      - sbncode %build_compiler
-      - sbnanaobj
-      - sbndaq-artdaq-core
-      - sbnobj
-  - sbnd_specs:
-      - sbndcode %build_compiler
 
   specs:
     - $specs_art
@@ -63,7 +61,6 @@ spack:
     - $fife_specs
     - $dune_specs
     - $icarus_specs
-    - $sbn_specs
     - $sbnd_specs
     - nusystematics
     - r-m-dd-config
