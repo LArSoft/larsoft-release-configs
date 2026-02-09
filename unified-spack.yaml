@@ -65,7 +65,7 @@ spack:
     - artdaq-core
     - trace
     - larcv2
-    - libjpeg
+    - jpeg
     - nusystematics
     - r-m-dd-config
     - py-srproxy
