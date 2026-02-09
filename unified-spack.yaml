@@ -62,6 +62,10 @@ spack:
     - $dune_specs
     - $specs_icarus
     - $specs_sbn
+    - artdaq-core
+    - trace
+    - larcv2
+    - libjpeg
     - nusystematics
     - r-m-dd-config
     - py-srproxy
