@@ -62,14 +62,8 @@ spack:
     - $dune_specs
     - $specs_icarus
     - $specs_sbn
-    - artdaq-core %build_compiler
-    - trace %build_compiler
-    - larcv2 %build_compiler
-    - jpeg %build_compiler
-    - nusystematics %build_compiler
     - r-m-dd-config
     - py-srproxy
-    - root~davix+emacs+fftw+http+math+mlp+opengl+postgres+pythia6+root7+spectrum+sqlite+ssl+tmva+tmva-pymva+xrootd %build_compiler
   concretizer:
     unify: true
     reuse:
