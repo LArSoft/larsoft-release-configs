@@ -45,7 +45,7 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $dune_specs
+    - $specs_dune
 
   concretizer:
     unify: true

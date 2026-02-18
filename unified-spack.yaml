@@ -59,7 +59,7 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $dune_specs
+    - $specs_dune
     - $specs_icarus
     - $specs_sbn
     - artdaq-core %build_compiler
