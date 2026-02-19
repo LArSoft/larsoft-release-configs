@@ -9,7 +9,7 @@ spack:
 
   # Packages defintions.
   # DUNE packages
-  - path: https://raw.githubusercontent.com/DUNE/dune-spack-config/refs/heads/main/included_yaml/dune-packages.yaml
+  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/b5d45909e3c3e2efb9930798df4ba2363986f42b/included_yaml/dune-packages.yaml
     sha256: f36085e9de736feb765305bebc170593d767a046c94b5489f4ca0082ab4d6754
   # These are version and variant requirements for a package suite
   - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/larsoft-packages.yaml
@@ -33,7 +33,7 @@ spack:
   - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/heads/main/included_yaml/fife_specs.yaml
     sha256: b0306775ce16510f7d099d597b3e07cd118f0a178362fdaea0273a8b788eca37 
   # DUNE specs
-  - path: https://raw.githubusercontent.com/DUNE/dune-spack-config/refs/heads/main/included_yaml/dune-specs.yaml
+  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/b5d45909e3c3e2efb9930798df4ba2363986f42b/included_yaml/dune-specs.yaml
     sha256: 61739bad1be5af0aafdc287cd1263652a4bdfaa7a413b8d6fa2a3135381f6486
 
   upstreams:
