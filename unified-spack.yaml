@@ -14,7 +14,7 @@ spack:
   - path: https://raw.githubusercontent.com/SBNSoftware/sbn-release-configs/refs/heads/main/included_yaml/sbn-specs.yaml
     sha256: 4177e283bdc216f8a807fe89a08949d3eb91693265c235f299db22eeed82632f
   # DUNE packages
-  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/refs/b5d45909e3c3e2efb9930798df4ba2363986f42b/included_yaml/dune-packages.yaml
+  - path: https://raw.githubusercontent.com/DUNE/dune-release-configs/b5d45909e3c3e2efb9930798df4ba2363986f42b/included_yaml/dune-packages.yaml
     sha256: f36085e9de736feb765305bebc170593d767a046c94b5489f4ca0082ab4d6754
   # These are version and variant requirements for a package suite
   - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/packages-larsoft.yaml
