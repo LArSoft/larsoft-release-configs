@@ -1,0 +1,125 @@
+spack:
+  config:
+    deprecated: true
+  include:
+  # Toolchain defintion.
+  # Defines the compiler (gcc or llvm/clang) and version.
+  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/gcc-12-toolchain.yaml
+    sha256: b769ddee1cff92c88b22cc968bc192a37d5fe863e6e224aeac5697a89480c5ca
+
+  # Packages defintions.
+  # These are version and variant requirements for a package suite
+  - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/larsoft-packages.yaml
+    sha256: 79189dce1ceee3db1672da87b2af878c113f28f5041e7b29f4ff755d9a017f94
+  - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/nusofthep-packages.yaml
+    sha256: 2d8dea0b6eabcd23d54e4db44a2e20aa4a7742b06a4107bca5ca3d1bc02f29e5
+  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
+    sha256: 32bfd398fcb27780263e6d593decbad885995b43852ccaf15788d82c7aed49de
+  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/heads/main/included_yaml/fife_packages.yaml
+    sha256: b7b7ef7ceaaa947c2cead036409f04aac94f5de357f6b7407699d00d511cfaa3
+
+
+  # Spec definitions.
+  # These are definitions of the root specs for a package suite
+  - path: https://raw.githubusercontent.com/LArSoft/larsoft-release-configs/refs/tags/larsoft-10.11.01/included_yaml/larsoft-specs.yaml
+    sha256: a3d4c8646e15a02b284150fe67c9d582ef73c3c4a70f58cc17cbb40334af5752
+  - path: https://raw.githubusercontent.com/NuSoftHEP/nusofthep-release-configs/refs/tags/nusofthep-3.17.01/included_yaml/nusofthep-specs.yaml
+    sha256: d9c0e0827d133ac6e44c207352baca83bb8d601ecbed260b5980d400571a0e94
+  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/specs-art.yaml
+    sha256: 16e776ee6fea578385fe5ccfd67924fdb442f9219ea0cf3beaad5f6a211b7281
+  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/heads/main/included_yaml/fife_specs.yaml
+    sha256: b0306775ce16510f7d099d597b3e07cd118f0a178362fdaea0273a8b788eca37 
+
+  definitions:
+    - specs_dune:
+      - duneana@develop %build_compiler
+      - duneanaobj@develop %build_compiler
+      - dunecalib@develop %build_compiler
+      - dunecore@develop %build_compiler
+      - dunedaqdataformats@develop %build_compiler
+      - dunedataprep@develop %build_compiler
+      - dunedetdataformats@develop %build_compiler
+      - duneexamples@develop %build_compiler
+      - duneopdet@develop %build_compiler
+      - dunepdlegacy@develop %build_compiler
+      - duneprototypes@develop %build_compiler
+      - dunereco@develop %build_compiler
+      - dunesim@develop %build_compiler
+      - dunesw@develop %build_compiler
+      - duneutil@develop %build_compiler
+      - protoduneana@develop %build_compiler
+      - gfal2-util %build_compiler
+      - r-m-dd-config %build_compiler
+    - specs_sbn:
+      - sbnalg@develop %build_compiler
+      - sbnanaobj@develop %build_compiler
+      - sbndaq-artdaq-core@develop %build_compiler
+      - sbncode@develop %build_compiler
+      - sbnobj@develop %build_compiler
+      - sbndcode@develop %build_compiler
+    - specs_icarus:
+      - icaruscode@develop %build_compiler
+      - icarus-signal-processing@develop %build_compiler
+      - icarusalg@develop %build_compiler
+      - icarusutil@develop %build_compiler
+
+  upstreams:
+    cvmfs-larsoft:
+      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/opt/spack
+
+  specs:
+    - $specs_art
+    - $specs_nusofthep
+    - $specs_larsoft
+    - $fife_specs
+    - $specs_dune
+    - $specs_sbn
+    - $specs_icarus
+
+  concretizer:
+    unify: true
+    reuse:
+      from:
+      - type: environment
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/var/spack/environments/larsoft-v10_11_01-unified-cuda-python-3_10-trimmed-m3
+  packages:
+    all:
+      providers:
+        libc:
+        - glibc
+        'zlib-api:':
+        - zlib
+      variants:
+      - generator=ninja
+      - build_type=Release
+      - cxxstd=17
+      target:
+        - x86_64_v3
+    cuda:
+      require:
+      - "@12.6"
+    geant4:
+      require:
+      - "@10.6.1"
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    grpc:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    py-tensorflow:
+      require:
+      - +cuda
+      - cuda_arch=80
+    py-torch:
+      require:
+      - +cuda
+      - cuda_arch=80
+    r-m-dd-config:
+      require:
+      - experiment=dune
+    root:
+      require:
+      - +xrootd
