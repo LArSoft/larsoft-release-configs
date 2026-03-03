@@ -61,7 +61,6 @@ spack:
       - icaruscode@develop %build_compiler
       - icarus-signal-processing@develop %build_compiler
       - icarusalg@develop %build_compiler
-      - icarusutil@develop %build_compiler
 
   upstreams:
     cvmfs-larsoft:
