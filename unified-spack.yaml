@@ -68,6 +68,7 @@ spack:
     - systematicstools@1 %build_compiler
     - r-m-dd-config
     - py-srproxy
+    - py-ipykernel
   concretizer:
     unify: true
     reuse:
