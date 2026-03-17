@@ -69,6 +69,7 @@ spack:
     - r-m-dd-config
     - py-srproxy
     - py-ipykernel
+    - python@:3.10
   concretizer:
     unify: true
     reuse:
