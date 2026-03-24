@@ -1,7 +1,7 @@
 packages:
   larana:
     require:
-    - '@=10.01.00'
+    - '@=10.02.02'
   larcore:
     require:
     - '@=10.00.03'
@@ -13,52 +13,52 @@ packages:
     - '@=10.00.00'
   lardata:
     require:
-    - '@=10.00.12'
+    - '@=10.00.16'
   lardataalg:
     require:
-    - '@=10.01.03'
+    - '@=10.02.01'
   lardataobj:
     require:
-    - '@=10.03.00'
+    - '@=10.05.00'
   lareventdisplay:
     require:
-    - '@=10.00.27'
+    - '@=10.01.02'
   larevt:
     require:
     - '@=10.00.14'
   larexamples:
     require:
-    - '@=10.00.23'
+    - '@=10.01.01'
   larg4:
     require:
-    - '@=10.01.00'
+    - '@=10.20.01'
   larpandora:
     require:
-    - '@=10.01.01'
+    - '@=10.02.03'
   larpandoracontent:
     require:
-    - '@=04.17.02'
+    - '@=04.19.03'
   larreco:
     require:
-    - '@=10.02.07'
+    - '@=10.06.02'
   larrecodnn:
     require:
-    - '@=10.01.22'
+    - '@=10.03.02'
   larsim:
     require:
-    - '@=10.07.05'
+    - '@=10.20.01'
   larsimdnn:
     require:
-    - '@=10.01.01'
+    - '@=10.02.01'
   larsimrad:
     require:
-    - '@=10.00.23'
+    - '@=10.01.01'
   larsoft:
     require:
-    - '@=10.11.01'
+    - '@=10.20.03'
   larwirecell:
     require:
-    - '@=10.01.22'
+    - '@=10.03.02'
 
   # LArSoft dependencies
   marley:
@@ -68,5 +68,5 @@ packages:
     # Version 0.30.0 has a compilation bug in it (missing eigen header include)
     # Also spdlog@1.15 doesn't appear to work with wire-cell-toolkit
     require:
-    - '@=0.30.7'
+    - '@=0.34.2'
     #- '^spdlog@1.13'
