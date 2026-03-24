@@ -29,7 +29,7 @@ spack:
     paths:
     - included_yaml/packages-larsoft.yaml
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.17.01
+    tag: nusofthep-3.22.00
     paths:
     - included_yaml/packages-nusofthep.yaml
   - git: https://github.com/art-framework-suite/art-release-configs
@@ -47,7 +47,7 @@ spack:
     paths:
     - included_yaml/specs-larsoft.yaml
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.17.01
+    tag: nusofthep-3.22.00
     paths:
     - included_yaml/specs-nusofthep.yaml
   - git: https://github.com/art-framework-suite/art-release-configs
