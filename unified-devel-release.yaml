@@ -98,6 +98,13 @@ spack:
     - $specs_dune
     - $specs_sbn
     - $specs_icarus
+    - artdaq-core %build_compiler
+    - larcv2 %build_compiler
+    - nusystematics %build_compiler
+    - systematicstools %build_compiler
+    - r-m-dd-config
+    - py-srproxy
+    - py-ipykernel
 
   concretizer:
     unify: true
@@ -123,7 +130,6 @@ spack:
       - "@12.6"
     geant4:
       require:
-      - "@10.6.1"
       - build_type=RelWithDebInfo
       - generator=ninja
       - cxxstd=17
@@ -146,6 +152,12 @@ spack:
     root:
       require:
       - +xrootd
+    nusystematics:
+      require:
+      - "@1"
+    systematicstools:
+      require:
+      - "@1"
     python:
       require:
       - "@:3.10"
