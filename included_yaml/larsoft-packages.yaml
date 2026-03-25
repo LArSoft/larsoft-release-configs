@@ -61,6 +61,9 @@ packages:
     - '@=10.03.02'
 
   # LArSoft dependencies
+  artg4tk:
+    require:
+    - '@=13.0.0'
   marley:
     require:
     - '@=1.2.1'
