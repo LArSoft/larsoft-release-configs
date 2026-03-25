@@ -19,10 +19,10 @@ spack:
     paths:
     - included_yaml/sbn-specs.yaml
   # DUNE packages
-  - git: https://github.com/DUNE/dune-release-configs
-    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
-    paths:
-    - included_yaml/dune-packages.yaml
+#  - git: https://github.com/DUNE/dune-release-configs
+#    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
+#    paths:
+#    - included_yaml/dune-packages.yaml
   # These are version and variant requirements for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.03
@@ -111,6 +111,33 @@ spack:
       - cxxstd=17
       target:
       - x86_64_v3
+    cuda:
+      require:
+      - "@12.6"
+    geant4:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    grpc:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    py-tensorflow:
+      require:
+      - +cuda
+      - cuda_arch=80
+    py-torch:
+      require:
+      - +cuda
+      - cuda_arch=80
+    r-m-dd-config:
+      require:
+      - experiment=dune
+    root:
+      require:
+      - +xrootd
     nusystematics:
       require:
       - "@1"
