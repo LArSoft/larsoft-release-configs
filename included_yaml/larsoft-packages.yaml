@@ -64,6 +64,9 @@ packages:
   pandorapfa:
     require:
     - '@=4.19.3'
+  pandorasdk:
+    require:
+    - '@=4.1.0'
   artg4tk:
     require:
     - '@=13.0.0'
