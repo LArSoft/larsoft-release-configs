@@ -144,6 +144,3 @@ spack:
     systematicstools:
       require:
       - "@1"
-    python:
-      require:
-      - "@:3.9"
