@@ -18,12 +18,12 @@ spack:
 
   # These are version and variant requirements for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.11.01
+    tag: larsoft-10.20.03
     paths:
     - included_yaml/larsoft-packages.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.17.01
+    tag: nusofthep-3.22.00
     paths:
     - included_yaml/nusofthep-packages.yaml
 
