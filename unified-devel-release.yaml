@@ -85,7 +85,7 @@ spack:
       - icaruscode@develop %build_compiler
       - icarus-signal-processing@develop %build_compiler
       - icarusalg@develop %build_compiler
-  - specs_uboone:
+    - specs_uboone:
       - ubana@develop %build_compiler
       - ubcore@develop %build_compiler
       - ubcrt@develop %build_compiler
