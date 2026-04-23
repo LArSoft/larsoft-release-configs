@@ -75,6 +75,19 @@ spack:
       - icarus-signal-processing
       - icarusalg
       - icarusutil
+  - specs_uboone:
+      - ubana%build_compiler
+      - ubcore%build_compiler
+      - ubcrt%build_compiler
+      - ubcv%build_compiler
+      - ubevt%build_compiler
+      - ublite%build_compiler
+      - ubobj%build_compiler
+      - uboonecode%build_compiler
+      - ubraw%build_compiler
+      - ubreco%build_compiler
+      - ubsim%build_compiler
+      - ubutil%build_compiler
 
   specs:
     - $specs_art
@@ -84,6 +97,7 @@ spack:
     - $specs_dune
     - $specs_icarus
     - $specs_sbn
+    - $specs_uboone
     - artdaq-core %build_compiler
     - larcv2 %build_compiler
     - nusystematics %build_compiler

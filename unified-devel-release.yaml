@@ -85,6 +85,19 @@ spack:
       - icaruscode@develop %build_compiler
       - icarus-signal-processing@develop %build_compiler
       - icarusalg@develop %build_compiler
+  - specs_uboone:
+      - ubana@develop %build_compiler
+      - ubcore@develop %build_compiler
+      - ubcrt@develop %build_compiler
+      - ubcv@develop %build_compiler
+      - ubevt@develop %build_compiler
+      - ublite@develop %build_compiler
+      - ubobj@develop %build_compiler
+      - uboonecode@develop %build_compiler
+      - ubraw@develop %build_compiler
+      - ubreco@develop %build_compiler
+      - ubsim@develop %build_compiler
+      - ubutil@develop %build_compiler
 
   upstreams:
     cvmfs-larsoft:
@@ -98,6 +111,7 @@ spack:
     - $specs_dune
     - $specs_sbn
     - $specs_icarus
+    - $specs_uboone
     - artdaq-core %build_compiler
     - larcv2 %build_compiler
     - nusystematics %build_compiler
