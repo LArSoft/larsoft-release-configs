@@ -124,6 +124,9 @@ spack:
       - build_type=RelWithDebInfo
       - generator=ninja
       - cxxstd=17
+    pandorasdk:
+      require:
+      - '@4.1.0'
     py-tensorflow:
       require:
       - +cuda
@@ -132,6 +135,9 @@ spack:
       require:
       - +cuda
       - cuda_arch=80
+    nufinder:
+      require:
+      - '@1.03.00'
     r-m-dd-config:
       require:
       - experiment=dune
