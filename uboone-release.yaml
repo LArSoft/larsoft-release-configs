@@ -8,74 +8,64 @@ spack:
     tag: art-3.14.04
     paths:
     - included_yaml/gcc-12-toolchain.yaml
-  # Packages defintions.
+
   # SBNSoftware
   - git: https://github.com/SBNSoftware/sbn-release-configs
     commit: 33a33f2f5229c6b017a098a1f4243a377acd04c4
     paths:
     - included_yaml/sbn-packages.yaml
+
   - git: https://github.com/SBNSoftware/sbn-release-configs
     commit: 33a33f2f5229c6b017a098a1f4243a377acd04c4
     paths:
     - included_yaml/sbn-specs.yaml
-  # DUNE packages
-#  - git: https://github.com/DUNE/dune-release-configs
-#    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
-#    paths:
-#    - included_yaml/dune-packages.yaml
+  
+  # Packages defintions.
   # These are version and variant requirements for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.03
     paths:
-    - included_yaml/packages-larsoft.yaml
+    - included_yaml/larsoft-packages.yaml
+  
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
     tag: nusofthep-3.22.00
     paths:
-    - included_yaml/packages-nusofthep.yaml
+    - included_yaml/nusofthep-packages.yaml
+  
   - git: https://github.com/art-framework-suite/art-release-configs
     tag: art-3.14.04
     paths:
     - included_yaml/packages-art.yaml
+  
   - git: https://github.com/fnal-fife/fife-release-configs
     commit: 4d43722522644a481f2b8aa7a4981b98a5df30e5
     paths:
     - included_yaml/fife_packages.yaml
+
   # Spec definitions.
   # These are definitions of the root specs for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.03
     paths:
-    - included_yaml/specs-larsoft.yaml
+    - included_yaml/larsoft-specs.yaml
+  
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
     tag: nusofthep-3.22.00
     paths:
-    - included_yaml/specs-nusofthep.yaml
+    - included_yaml/nusofthep-specs.yaml
+  
   - git: https://github.com/art-framework-suite/art-release-configs
     tag: art-3.14.04
     paths:
     - included_yaml/specs-art.yaml
+  
   - git: https://github.com/fnal-fife/fife-release-configs
     commit: 4d43722522644a481f2b8aa7a4981b98a5df30e5
     paths:
     - included_yaml/fife_specs.yaml
-  # DUNE specs
-  - git: https://github.com/DUNE/dune-release-configs
-    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
-    paths:
-    - included_yaml/dune-specs.yaml
 
   definitions:
-
-# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
-# and the git:(repo urls) and tag: or commit: included above.
-#
-  - specs_icarus:
-      - icaruscode %build_compiler
-      - icarus-data
-      - icarus-signal-processing
-      - icarusalg
-      - icarusutil
-  - specs_uboone:
+    - specs_uboone:
       - ubana%build_compiler
       - ubcore%build_compiler
       - ubcrt%build_compiler
@@ -94,24 +84,19 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $specs_dune
-    - $specs_icarus
-    - $specs_sbn
     - $specs_uboone
-    - artdaq-core %build_compiler
-    - larcv2 %build_compiler
-    - nusystematics %build_compiler
-    - systematicstools %build_compiler
-    - r-m-dd-config
-    - py-srproxy
-    - py-ipykernel
+
+  upstreams:
+    cvmfs-larsoft:
+      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/opt/spack
+
   concretizer:
     unify: true
     reuse:
       from:
-      - type: local
-      - type: external
-  view: false
+      - type: environment
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.0/spack_env/var/spack/environments/larsoft-v10_20_03-unified-cuda-python-3_9-trimmed-rc1
+  view: true
   packages:
     all:
       providers:
@@ -125,42 +110,7 @@ spack:
       - cxxstd=17
       target:
       - x86_64_v3
-    cuda:
+    python:
       require:
-      - "@12.6"
-    geant4:
-      require:
-      - build_type=RelWithDebInfo
-      - generator=ninja
-      - cxxstd=17
-    grpc:
-      require:
-      - build_type=RelWithDebInfo
-      - generator=ninja
-      - cxxstd=17
-    pandorasdk:
-      require:
-      - '@4.1.0'
-    py-tensorflow:
-      require:
-      - +cuda
-      - cuda_arch=80
-    py-torch:
-      require:
-      - +cuda
-      - cuda_arch=80
-    nufinder:
-      require:
-      - '@1.03.00'
-    r-m-dd-config:
-      require:
-      - experiment=dune
-    root:
-      require:
-      - +xrootd
-    nusystematics:
-      require:
-      - "@1"
-    systematicstools:
-      require:
-      - "@1"
+      - "@:3.10"
+
