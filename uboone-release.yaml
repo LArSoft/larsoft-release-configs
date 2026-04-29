@@ -67,6 +67,7 @@ spack:
   definitions:
     - specs_uboone:
       - ubana%build_compiler
+      - ubdl%build_compiler
       - ubcore%build_compiler
       - ubcrt%build_compiler
       - ubcv%build_compiler
