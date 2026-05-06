@@ -11,12 +11,6 @@ spack:
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
 
-  - git: https://github.com/DUNE/dune-release-configs
-    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
-    paths:
-    - included_yaml/dune-packages.yaml
-    - included_yaml/dune-specs.yaml
-
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.03
     paths:
@@ -30,11 +24,21 @@ spack:
     - included_yaml/nusofthep-specs.yaml
 
   - git: https://github.com/fnal-fife/fife-release-configs
-    commit: 4d43722522644a481f2b8aa7a4981b98a5df30e5
+    branch: main
     paths:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
+  - git: https://github.com/SBNSoftware/sbn-release-configs
+    branch: main
+    paths:
+    - included_yaml/sbn-packages.yaml
+    - included_yaml/sbn-specs.yaml
+
+
+# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
+# and the git:(repo urls) and tag: or commit: included above.
+#
   definitions:
 
   - specs_icarus:
