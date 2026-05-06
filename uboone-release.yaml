@@ -1,68 +1,40 @@
 spack:
   config:
     deprecated: true
+
   include:
-  # Toolchain defintion.
-  # Defines the compiler (gcc or llvm/clang) and version.
+
   - git: https://github.com/art-framework-suite/art-release-configs
     tag: art-3.14.04
     paths:
     - included_yaml/gcc-12-toolchain.yaml
+    - included_yaml/packages-art.yaml
+    - included_yaml/specs-art.yaml
 
-  # SBNSoftware
-  - git: https://github.com/SBNSoftware/sbn-release-configs
-    commit: 33a33f2f5229c6b017a098a1f4243a377acd04c4
+  - git: https://github.com/DUNE/dune-release-configs
+    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
     paths:
-    - included_yaml/sbn-packages.yaml
+    - included_yaml/dune-packages.yaml
+    - included_yaml/dune-specs.yaml
 
-  - git: https://github.com/SBNSoftware/sbn-release-configs
-    commit: 33a33f2f5229c6b017a098a1f4243a377acd04c4
-    paths:
-    - included_yaml/sbn-specs.yaml
-  
-  # Packages defintions.
-  # These are version and variant requirements for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.03
     paths:
     - included_yaml/larsoft-packages.yaml
-  
+    - included_yaml/larsoft-specs.yaml
+
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
     tag: nusofthep-3.22.00
     paths:
     - included_yaml/nusofthep-packages.yaml
-  
-  - git: https://github.com/art-framework-suite/art-release-configs
-    tag: art-3.14.04
-    paths:
-    - included_yaml/packages-art.yaml
-  
+    - included_yaml/nusofthep-specs.yaml
+
   - git: https://github.com/fnal-fife/fife-release-configs
     commit: 4d43722522644a481f2b8aa7a4981b98a5df30e5
     paths:
     - included_yaml/fife_packages.yaml
-
-  # Spec definitions.
-  # These are definitions of the root specs for a package suite
-  - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.20.03
-    paths:
-    - included_yaml/larsoft-specs.yaml
-  
-  - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.22.00
-    paths:
-    - included_yaml/nusofthep-specs.yaml
-  
-  - git: https://github.com/art-framework-suite/art-release-configs
-    tag: art-3.14.04
-    paths:
-    - included_yaml/specs-art.yaml
-  
-  - git: https://github.com/fnal-fife/fife-release-configs
-    commit: 4d43722522644a481f2b8aa7a4981b98a5df30e5
-    paths:
     - included_yaml/fife_specs.yaml
+
 
   definitions:
     - specs_uboone:
