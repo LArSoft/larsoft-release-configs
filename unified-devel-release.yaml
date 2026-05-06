@@ -1,7 +1,7 @@
 spack:
   config:
     deprecated: true
-    include:
+  include:
 
   - git: https://github.com/art-framework-suite/art-release-configs
     tag: art-3.14.04
@@ -9,17 +9,6 @@ spack:
     - included_yaml/gcc-12-toolchain.yaml
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
-
-  - git: https://github.com/SBNSoftware/sbn-release-configs
-    branch: main
-    paths:
-    - included_yaml/sbn-packages.yaml
-
-  - git: https://github.com/DUNE/dune-release-configs
-    commit: f2ff5419c5850b54cb944c97bd5357ff46512f53
-    paths:
-    - included_yaml/dune-packages.yaml
-
 
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.03
