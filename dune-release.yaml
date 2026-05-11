@@ -70,4 +70,7 @@ spack:
     python:
       require:
       - "@:3.10"
+    trace:
+      require:
+      - "@:v3_23_00"
 

@@ -150,3 +150,7 @@ spack:
     systematicstools:
       require:
       - "@1"
+    trace:
+      require:
+      - "@:v3_23_00"
+
