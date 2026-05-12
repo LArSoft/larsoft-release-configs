@@ -48,9 +48,8 @@ spack:
   - specs_icarus:
       - icaruscode %build_compiler
       - icarus-data
-      - icarus-signal-processing
-      - icarusalg
-      - icarusutil
+      - icarus-signal-processing %build_compiler
+      - icarusalg %build_compiler
   
   - specs_uboone:
       - ubana%build_compiler
