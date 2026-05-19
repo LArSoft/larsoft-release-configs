@@ -76,6 +76,7 @@ spack:
     - $specs_uboone
     - artdaq-core %build_compiler
     - larcv2 %build_compiler
+    - larcv %build_compiler
     - nusystematics %build_compiler
     - systematicstools %build_compiler
     - r-m-dd-config
