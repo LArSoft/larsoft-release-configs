@@ -71,7 +71,7 @@ spack:
       - x86_64_v3
     python:
       require:
-      - "@:3.10"
+      - "@:3.11"
     trace:
       require:
       - "@:v3_23_00"
