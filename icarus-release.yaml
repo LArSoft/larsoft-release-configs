@@ -83,6 +83,33 @@ spack:
     python:
       require:
       - "@:3.11"
+    cuda:
+      require:
+      - "@12.6"
+    geant4:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    grpc:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    py-tensorflow:
+      require:
+      - +cuda
+      - cuda_arch=80
+    py-torch:
+      require:
+      - +cuda
+      - cuda_arch=80
+    r-m-dd-config:
+      require:
+      - experiment=dune
+    root:
+      require:
+      - +xrootd
     nusystematics:
       require:
       - "@1"
@@ -92,5 +119,6 @@ spack:
     trace:
       require:
       - "@:v3_23_00"
+
 
 

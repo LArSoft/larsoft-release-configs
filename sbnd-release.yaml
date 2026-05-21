@@ -69,9 +69,36 @@ spack:
       - cxxstd=17
       target:
       - x86_64_v3
+    cuda:
+      require:
+      - "@12.6"
     python:
       require:
       - "@:3.11"
+    geant4:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    grpc:
+      require:
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+    py-tensorflow:
+      require:
+      - +cuda
+      - cuda_arch=80
+    py-torch:
+      require:
+      - +cuda
+      - cuda_arch=80
+    r-m-dd-config:
+      require:
+      - experiment=dune
+    root:
+      require:
+      - +xrootd
     nusystematics:
       require:
       - "@1"

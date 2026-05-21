@@ -102,6 +102,9 @@ spack:
       - cxxstd=17
       target:
       - x86_64_v3
+    python:
+      require:
+      - "@:3.11"
     cuda:
       require:
       - "@12.6"
@@ -144,4 +147,3 @@ spack:
     trace:
       require:
       - "@:v3_23_00"
-
