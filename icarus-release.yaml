@@ -85,6 +85,12 @@ spack:
     python:
       require:
       - "@:3.11"
+    nusystematics:
+      require:
+      - "@1"
+    systematicstools:
+      require:
+      - "@1"
     trace:
       require:
       - "@:v3_23_00"
