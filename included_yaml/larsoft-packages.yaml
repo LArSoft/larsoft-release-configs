@@ -1,72 +1,72 @@
 packages:
   larana:
     require:
-    - '@=10.02.02'
+    - '@=10.02.04'
   larcore:
     require:
-    - '@=10.00.03'
+    - '@=10.00.04'
   larcorealg:
     require:
-    - '@=10.00.03'
+    - '@=10.00.04'
   larcoreobj:
     require:
-    - '@=10.00.00'
+    - '@=10.00.01'
   lardata:
     require:
     - '@=10.00.16'
   lardataalg:
     require:
-    - '@=10.02.01'
+    - '@=10.02.02'
   lardataobj:
     require:
-    - '@=10.05.00'
+    - '@=10.05.01'
   lareventdisplay:
     require:
-    - '@=10.01.02'
+    - '@=10.01.04'
   larevt:
     require:
-    - '@=10.00.14'
+    - '@=10.00.19'
   larexamples:
     require:
-    - '@=10.01.01'
+    - '@=10.01.02'
   larg4:
     require:
-    - '@=10.20.01'
+    - '@=10.20.02'
   larpandora:
     require:
-    - '@=10.02.03'
+    - '@=10.02.07'
   larpandoracontent:
     require:
-    - '@=04.19.03'
+    - '@=05.01.00'
   larreco:
     require:
-    - '@=10.06.02'
+    - '@=10.06.04'
   larrecodnn:
     require:
-    - '@=10.03.02'
+    - '@=10.03.05'
   larsim:
     require:
-    - '@=10.20.01'
+    - '@=10.20.02'
   larsimdnn:
     require:
-    - '@=10.02.01'
+    - '@=10.02.02'
   larsimrad:
     require:
-    - '@=10.01.01'
+    - '@=10.01.03'
   larsoft:
     require:
-    - '@=10.20.03'
+    - '@=10.20.09'
   larwirecell:
     require:
-    - '@=10.03.02'
+    - '@=10.03.05'
 
   # LArSoft dependencies
   pandorapfa:
     require:
-    - '@=4.19.3'
+    - '@=5.1.0'
   pandorasdk:
     require:
-    - '@=4.1.0'
+    - '@=5.0.0'
   artg4tk:
     require:
     - '@=13.0.0'
@@ -77,5 +77,5 @@ packages:
     # Version 0.30.0 has a compilation bug in it (missing eigen header include)
     # Also spdlog@1.15 doesn't appear to work with wire-cell-toolkit
     require:
-    - '@=0.34.2'
+    - '@=0.36.1'
     #- '^spdlog@1.13'
