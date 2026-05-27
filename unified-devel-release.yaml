@@ -105,15 +105,6 @@ spack:
         path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_20_03-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
-    gcc:
-      externals:
-      - spec: gcc@12.5.0 languages:='c,c++,fortran'
-        prefix: /cvmfs/scisoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/gcc-12.5.0-wrkusgqvgojd2ffmdmcpd2o4ftyubyku
-        extra_attributes:
-          compilers:
-            c: /cvmfs/scisoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/gcc-12.5.0-wrkusgqvgojd2ffmdmcpd2o4ftyubyku/bin/gcc
-            cxx: /cvmfs/scisoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/gcc-12.5.0-wrkusgqvgojd2ffmdmcpd2o4ftyubyku/bin/g++
-            fortran: /cvmfs/scisoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/gcc-12.5.0-wrkusgqvgojd2ffmdmcpd2o4ftyubyku/bin/gfortran
     all:
       providers:
         libc:
