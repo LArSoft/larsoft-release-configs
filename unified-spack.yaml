@@ -23,13 +23,13 @@ spack:
     - included_yaml/dune-specs.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.20.03
+    tag: larsoft-10.20.09
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.22.00
+    tag: nusofthep-3.22.01
     paths:
     - included_yaml/nusofthep-packages.yaml
     - included_yaml/nusofthep-specs.yaml
