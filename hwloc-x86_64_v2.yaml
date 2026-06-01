@@ -30,4 +30,4 @@ spack:
       - build_type=Release
       - cxxstd=17
       target:
-      - x86_64_v2
+      - x86_64_v3
