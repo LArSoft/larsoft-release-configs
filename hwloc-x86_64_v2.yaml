@@ -1,0 +1,33 @@
+spack:
+  config:
+    deprecated: true
+  include:
+
+  - git: https://github.com/art-framework-suite/art-release-configs
+    tag: art-3.14.04
+    paths:
+    - included_yaml/gcc-12-toolchain.yaml
+
+  specs:
+  - hwloc%build_compiler
+
+  concretizer:
+    unify: true
+    reuse:
+      from:
+      - type: local
+      - type: external
+  view: false
+  packages:
+    all:
+      providers:
+        libc:
+        - glibc
+        'zlib-api:':
+        - zlib
+      variants:
+      - generator=ninja
+      - build_type=Release
+      - cxxstd=17
+      target:
+      - x86_64_v2
