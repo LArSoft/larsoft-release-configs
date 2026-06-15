@@ -18,5 +18,4 @@ definitions:
   - larsim %build_compiler
   - larsimdnn %build_compiler
   - larsimrad %build_compiler
-  - larsoft %build_compiler
   - larwirecell %build_compiler

@@ -45,12 +45,37 @@ spack:
 # The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
 # and the git:(repo urls) and tag: or commit: included above.
 #
+  - specs_dune:
+      - duneana %build_compiler
+      - duneanaobj %build_compiler
+      - dunecalib %build_compiler
+      - dunecore %build_compiler
+      - dunedaqdataformats %build_compiler
+      - dunedataprep %build_compiler
+      - dunedetdataformats %build_compiler
+      - duneexamples %build_compiler
+      - duneopdet %build_compiler
+      - dunepdlegacy %build_compiler
+      - duneprototypes %build_compiler
+      - dunereco %build_compiler
+      - dunesim %build_compiler
+      - dunesw %build_compiler
+      - duneutil %build_compiler
+      - protoduneana %build_compiler
+      - gfal2-util %build_compiler
+      - r-m-dd-config %build_compiler
+  - specs_sbn:
+      - sbnalg %build_compiler
+      - sbnanaobj %build_compiler
+      - sbndaq-artdaq-core %build_compiler
+      - sbncode %build_compiler
+      - sbnobj %build_compiler
+      - sbndcode %build_compiler
   - specs_icarus:
       - icaruscode %build_compiler
-      - icarus-data
       - icarus-signal-processing %build_compiler
       - icarusalg %build_compiler
-  
+
   - specs_uboone:
       - ubana%build_compiler
       - ubcore%build_compiler
@@ -82,6 +107,7 @@ spack:
     - r-m-dd-config
     - py-srproxy
     - py-ipykernel
+    - geant4reweight
   concretizer:
     unify: true
     reuse:
@@ -141,3 +167,111 @@ spack:
     trace:
       require:
       - "@:v3_23_00"
+    duneana::
+      require:
+      - "@develop"
+    duneanaobj::
+      require:
+      - "@develop"
+    dunecalib::
+      require:
+      - "@develop"
+    dunecore::
+      require:
+      - "@develop"
+    dunedaqdataformats::
+      require:
+      - "@develop"
+    dunedataprep::
+      require:
+      - "develop"
+    dunedetdataformats::
+      require:
+      - "@develop"
+    duneexamples::
+      require:
+      - "@develop"
+    duneopdet::
+      require:
+      - "@develop"
+    dunepdlegacy::
+      require:
+      - "@develop"
+    duneprototypes::
+      require:
+      - "@develop"
+    dunereco::
+      require:
+      - "@develop"
+    dunesim::
+      require:
+      - "@develop"
+    dunesw::
+      require:
+      - "@develop"
+    duneutil::
+      require:
+      - "@develop"
+    protoduneana::
+      require:
+      - "@develop"
+     'sbnalg:':
+      require:
+      - '@develop'
+    'sbnanaobj:':
+      require:
+      - '@develop'
+    'sbncode:':
+      require:
+      - '@develop'
+    'sbndcode:':
+      require:
+      - '@develop'
+    'sbndaq-artdaq-core'::
+      require:
+      - "@devlop"
+    'sbnobj:':
+      require:
+      - '@develop'
+    'icarus-signal-processing'::
+          require:
+      - '@develop'
+    'icaruscode'::
+      require:
+      - '@develop'
+    'icarusalg'::
+      require:
+      - '@develop'
+    'ubana'::
+      require:
+      - '@develop'
+    'ubcore'::
+      require:
+      - '@develop'
+    'ubcrt'::
+      require:
+      - '@develop'
+    'ubcv'::
+      require:
+      - '@develop'
+    'ubevt'::
+      require:
+      - '@develop'
+    'ublite'::
+      require:
+      - '@develop'
+    'ubobj':
+      require:
+      - '@develop'
+    'uboonecode'::
+      require:
+      - '@develop'
+    'ubraw'::
+      require:
+      - '@develop'
+    'ubreco'::
+        require:
+      - '@develop'
+    'ubsim'::
+      require:
+      - '@develop'
