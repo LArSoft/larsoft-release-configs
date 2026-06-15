@@ -181,7 +181,7 @@ spack:
       - "@develop"
     'dunedataprep:':
       require:
-      - "develop"
+      - "@develop"
     'dunedetdataformats:':
       require:
       - "@develop"
