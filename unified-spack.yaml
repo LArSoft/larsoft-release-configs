@@ -167,55 +167,55 @@ spack:
     trace:
       require:
       - "@:v3_23_00"
-    duneana::
+    'duneana:':
       require:
       - "@develop"
-    duneanaobj::
+    'duneanaobj:':
       require:
       - "@develop"
-    dunecalib::
+    'dunecalib:':
       require:
       - "@develop"
-    dunecore::
+    'dunecore:':
       require:
       - "@develop"
-    dunedaqdataformats::
+    'dunedaqdataformats:':
       require:
       - "@develop"
-    dunedataprep::
+    'dunedataprep:':
       require:
       - "develop"
-    dunedetdataformats::
+    'dunedetdataformats:':
       require:
       - "@develop"
-    duneexamples::
+    'duneexamples:':
       require:
       - "@develop"
-    duneopdet::
+    'duneopdet:':
       require:
       - "@develop"
-    dunepdlegacy::
+    'dunepdlegacy:':
       require:
       - "@develop"
-    duneprototypes::
+    'duneprototypes:':
       require:
       - "@develop"
-    dunereco::
+    'dunereco:':
       require:
       - "@develop"
-    dunesim::
+    'dunesim:':
       require:
       - "@develop"
-    dunesw::
+    'dunesw:':
       require:
       - "@develop"
-    duneutil::
+    'duneutil:':
       require:
       - "@develop"
-    protoduneana::
+    'protoduneana:':
       require:
       - "@develop"
-     'sbnalg:':
+    'sbnalg:':
       require:
       - '@develop'
     'sbnanaobj:':
@@ -227,51 +227,51 @@ spack:
     'sbndcode:':
       require:
       - '@develop'
-    'sbndaq-artdaq-core'::
+    'sbndaq-artdaq-core:':
       require:
       - "@devlop"
     'sbnobj:':
       require:
       - '@develop'
-    'icarus-signal-processing'::
-          require:
-      - '@develop'
-    'icaruscode'::
+    'icarus-signal-processing:':
       require:
       - '@develop'
-    'icarusalg'::
+    'icaruscode:':
       require:
       - '@develop'
-    'ubana'::
+    'icarusalg:':
       require:
       - '@develop'
-    'ubcore'::
+    'ubana:':
       require:
       - '@develop'
-    'ubcrt'::
+    'ubcore:':
       require:
       - '@develop'
-    'ubcv'::
+    'ubcrt:':
       require:
       - '@develop'
-    'ubevt'::
+    'ubcv:':
       require:
       - '@develop'
-    'ublite'::
+    'ubevt:':
       require:
       - '@develop'
-    'ubobj':
+    'ublite:':
       require:
       - '@develop'
-    'uboonecode'::
+    'ubobj:':
       require:
       - '@develop'
-    'ubraw'::
+    'uboonecode:':
       require:
       - '@develop'
-    'ubreco'::
-        require:
+    'ubraw:':
+      require:
       - '@develop'
-    'ubsim'::
+    'ubreco:':
+      require:
+      - '@develop'
+    'ubsim:':
       require:
       - '@develop'
