@@ -14,13 +14,11 @@ spack:
     branch: main
     paths:
     - included_yaml/sbn-packages.yaml
-    - included_yaml/sbn-specs.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
     branch: main
     paths:
     - included_yaml/dune-packages.yaml
-    - included_yaml/dune-specs.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.20.09
@@ -67,7 +65,6 @@ spack:
   - specs_sbn:
       - sbnalg %build_compiler
       - sbnanaobj %build_compiler
-      - sbndaq-artdaq-core %build_compiler
       - sbncode %build_compiler
       - sbnobj %build_compiler
       - sbndcode %build_compiler
@@ -229,7 +226,7 @@ spack:
       - '@develop'
     'sbndaq-artdaq-core:':
       require:
-      - "@devlop"
+      - "@develop"
     'sbnobj:':
       require:
       - '@develop'
