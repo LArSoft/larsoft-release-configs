@@ -1,7 +1,7 @@
 packages:
   larana:
     require:
-    - '@=10.02.04'
+    - '@=10.02.05'
   larcore:
     require:
     - '@=10.00.04'
@@ -13,7 +13,7 @@ packages:
     - '@=10.00.01'
   lardata:
     require:
-    - '@=10.00.16'
+    - '@=10.00.17'
   lardataalg:
     require:
     - '@=10.02.02'
@@ -22,43 +22,46 @@ packages:
     - '@=10.05.01'
   lareventdisplay:
     require:
-    - '@=10.01.04'
+    - '@=10.01.05'
   larevt:
     require:
     - '@=10.00.19'
   larexamples:
     require:
-    - '@=10.01.02'
+    - '@=10.02.00'
   larg4:
     require:
-    - '@=10.20.02'
+    - '@=10.20.03'
   larpandora:
     require:
-    - '@=10.02.07'
+    - '@=10.03.00'
   larpandoracontent:
     require:
-    - '@=05.01.00'
+    - '@=05.02.00'
   larreco:
     require:
-    - '@=10.06.04'
+    - '@=10.06.05'
   larrecodnn:
     require:
-    - '@=10.03.05'
+    - '@=10.03.06'
   larsim:
     require:
-    - '@=10.20.02'
+    - '@=10.20.03'
   larsimdnn:
     require:
-    - '@=10.02.02'
+    - '@=10.02.03'
   larsimrad:
     require:
-    - '@=10.01.03'
+    - '@=10.01.04'
   larsoft:
     require:
-    - '@=10.20.09'
+    - '@=10.21.00'
   larwirecell:
     require:
-    - '@=10.03.05'
+    - '@=10.03.06'
+  larvecutils:
+    require:
+    - '@=09.04.03'
 
   # LArSoft dependencies
   pandorapfa:
