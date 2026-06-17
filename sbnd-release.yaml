@@ -18,7 +18,7 @@ spack:
     - included_yaml/sbn-specs.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.20.09
+    tag: larsoft-10.21.00
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
