@@ -106,6 +106,7 @@ spack:
     - py-srproxy
     - py-ipykernel
     - geant4reweight
+    - snakemake
   concretizer:
     unify: true
     reuse:
