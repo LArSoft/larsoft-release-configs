@@ -30,10 +30,10 @@ spack:
     - included_yaml/fife_specs.yaml
 
   - git: https://github.com/hgreenlee/uboone-release-configs
-   branch: main
-   paths:
-   - included_yaml/uboone_packages.yaml
-   - included_yaml/uboone_specs.yaml
+    branch: main
+    paths:
+    - included_yaml/uboone_packages.yaml
+    - included_yaml/uboone_specs.yaml
 
   specs:
     - $specs_art
