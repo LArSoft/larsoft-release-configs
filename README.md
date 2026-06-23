@@ -3,9 +3,9 @@ Spack configuration files for LArSoft releases.
 
 sha256 checksums:
 
-larsoft@10.20.09
+larsoft@10.21.09
 
 ```
-f52c61bd65d7720e0947e4bbc5800f209384bbd60c43c71355dfdc71abb180ea  included_yaml/larsoft-packages.yaml
-a3d4c8646e15a02b284150fe67c9d582ef73c3c4a70f58cc17cbb40334af5752  included_yaml/larsoft-specs.yaml
+2a034d5be3a5a79e602ef693ff80173bdcfc8a76673e4db2a1b397cb80f74cda  included_yaml/larsoft-packages.yaml
+8febd8e065b2384f6bea445866b144fb830798d0e59ac88f5f5eda2cd06bd4d6  included_yaml/larsoft-specs.yaml
 ```
