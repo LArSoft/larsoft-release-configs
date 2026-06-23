@@ -31,6 +31,7 @@ spack:
 
   -git: https://github.com/hgreenlee/uboone-release-configs
    branch: main
+   paths:
    - included_yaml/uboone_packages.yaml
    - included_yaml/uboone_specs.yaml
 
