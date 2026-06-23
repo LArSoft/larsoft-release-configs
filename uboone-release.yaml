@@ -29,25 +29,10 @@ spack:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
-
-# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
-# and the git:(repo urls) and tag: or commit: included above.
-#
-  definitions:
-    - specs_uboone:
-      - ubana%build_compiler
-      - ubdl%build_compiler
-      - ubcore%build_compiler
-      - ubcrt%build_compiler
-      - ubcv%build_compiler
-      - ubevt%build_compiler
-      - ublite%build_compiler
-      - ubobj%build_compiler
-      - uboonecode%build_compiler
-      - ubraw%build_compiler
-      - ubreco%build_compiler
-      - ubsim%build_compiler
-      - ubutil%build_compiler
+  -git: https://github.com/hgreenlee/uboone-release-configs
+   branch: main
+   - included_yaml/uboone_packages.yaml
+   - included_yaml/uboone_specs.yaml
 
   specs:
     - $specs_art

@@ -16,6 +16,8 @@ spack:
     paths:
     - included_yaml/sbn-packages.yaml
     - included_yaml/sbn-specs.yaml
+    - included_yaml/sbnd-packages.yaml
+    - included_yaml/sbnd-specs.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.21.00
@@ -44,6 +46,7 @@ spack:
     - $specs_larsoft
     - $fife_specs
     - $specs_sbn
+    - $specs_sbnd
 
   upstreams:
     cvmfs-larsoft:

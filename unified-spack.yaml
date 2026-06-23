@@ -67,12 +67,12 @@ spack:
       - sbnanaobj %build_compiler
       - sbncode %build_compiler
       - sbnobj %build_compiler
+  - specs_sbnd
       - sbndcode %build_compiler
   - specs_icarus:
       - icaruscode %build_compiler
       - icarus-signal-processing %build_compiler
       - icarusalg %build_compiler
-
   - specs_uboone:
       - ubana%build_compiler
       - ubcore%build_compiler
@@ -95,6 +95,7 @@ spack:
     - $specs_dune
     - $specs_icarus
     - $specs_sbn
+    - $specs_sbnd
     - $specs_uboone
     - artdaq-core %build_compiler
     - larcv2 %build_compiler

@@ -57,6 +57,7 @@ spack:
       - sbndaq-artdaq-core@develop %build_compiler
       - sbncode@develop %build_compiler
       - sbnobj@develop %build_compiler
+    - specs_sbnd
       - sbndcode@develop %build_compiler
     - specs_icarus:
       - icaruscode@develop %build_compiler
@@ -87,6 +88,7 @@ spack:
     - $fife_specs
     - $specs_dune
     - $specs_sbn
+    - $specs_sbnd
     - $specs_icarus
     - $specs_uboone
     - artdaq-core %build_compiler
