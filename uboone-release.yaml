@@ -24,7 +24,7 @@ spack:
     - included_yaml/nusofthep-specs.yaml
 
   - git: https://github.com/fnal-fife/fife-release-configs
-    branch: main
+    tag: 2.8.0.4
     paths:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
