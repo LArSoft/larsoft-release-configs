@@ -67,7 +67,7 @@ spack:
       - sbnanaobj %build_compiler
       - sbncode %build_compiler
       - sbnobj %build_compiler
-  - specs_sbnd
+  - specs_sbnd:
       - sbndcode %build_compiler
   - specs_icarus:
       - icaruscode %build_compiler
