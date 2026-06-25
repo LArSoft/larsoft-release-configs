@@ -28,6 +28,23 @@ spack:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
+  - git: https://github.com/SBNSoftware/sbn-release-configs
+    branch: main
+    paths:
+    - included_yaml/sbn-packages.yaml
+    - included_yaml/sbnd-packages.yaml
+    - included_yaml/icarus-packages.yaml
+
+  - git: https://github.com/DUNE/dune-release-configs
+    branch: main
+    paths:
+    - included_yaml/dune-packages.yaml
+
+  - git: https://github.com/uboone/uboone-release-configs
+    branch: main
+    paths:
+    - included_yaml/uboone_packages.yaml
+
 # The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
 # and the git:(repo urls) and tag: or commit: included above.
 #
