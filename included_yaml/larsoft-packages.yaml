@@ -55,10 +55,10 @@ packages:
     - '@=10.01.04'
   larsoft:
     require:
-    - '@=10.21.00'
+    - '@=10.21.01'
   larwirecell:
     require:
-    - '@=10.03.06'
+    - '@=10.03.07'
   larvecutils:
     require:
     - '@=09.04.03'
@@ -77,8 +77,5 @@ packages:
     require:
     - '@=1.2.1'
   wire-cell-toolkit:
-    # Version 0.30.0 has a compilation bug in it (missing eigen header include)
-    # Also spdlog@1.15 doesn't appear to work with wire-cell-toolkit
     require:
-    - '@=0.36.1'
-    #- '^spdlog@1.13'
+    - '@=0.37.0'
