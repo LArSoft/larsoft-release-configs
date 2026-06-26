@@ -10,7 +10,7 @@ spack:
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
 
-  - git: https://github.com/SBNSoftware/sbn-release-configs
+  - git: https://github.com/gartung/sbn-release-configs
     branch: main
     paths:
     - included_yaml/sbn-packages.yaml
