@@ -62,7 +62,9 @@ packages:
   larvecutils:
     require:
     - '@=09.04.03'
-
+  larfinder:
+    require:
+    - '@develop'
   # LArSoft dependencies
   pandorapfa:
     require:
