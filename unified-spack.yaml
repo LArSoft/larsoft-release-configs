@@ -28,7 +28,7 @@ spack:
     - included_yaml/uboone_packages.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.21.01
+    tag: larsoft-10.21.02
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
