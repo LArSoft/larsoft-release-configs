@@ -12,7 +12,7 @@ spack:
     - included_yaml/specs-art.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.21.00
+    tag: larsoft-10.21.02
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
