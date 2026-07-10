@@ -281,3 +281,21 @@ spack:
     'ubsim:':
       require:
       - '@develop'
+    sbndata:
+      externals:
+      - spec: sbndata@01_08
+        prefix: /cvmfs/sbn.opensciencegrid.org/products/sbn/sbndata/v01_08/
+    sbnd-data:
+      externals:
+      - spec: sbnd-data@01_42_00
+        prefix: /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/v01_42_00
+    icarus-data:
+      externals:
+      - spec: icarus-data@10.20.03
+        prefix: /cvmfs/icarus.opensciencegrid.org/products/icarus/icarus_data/v10_20_03
+      - spec: icarus-data@10.20.04
+        prefix: /cvmfs/icarus.opensciencegrid.org/products/icarus/icarus_data/v10_20_04
+    uboonedata:
+      externals:
+      - spec: uboonedata@10_20_04
+        prefix: /cvmfs/uboone.opensciencegrid.org/products/uboonedata/v10_20_04
