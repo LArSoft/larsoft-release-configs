@@ -330,7 +330,7 @@ spack:
     g4photonevaporation:
       externals:
       - spec: g4photonevaporation@5.7
-      prefix: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/g4photonevaporation-5.7-2in7gfctqpnbgsmyezcnj3xxo5exp5xw
+        prefix: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/g4photonevaporation-5.7-2in7gfctqpnbgsmyezcnj3xxo5exp5xw
     g4pii:
       externals:
       - spec: g4pii@1.3
