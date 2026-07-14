@@ -351,3 +351,7 @@ spack:
       externals:
       - spec: g4tendl@1.4
         prefix: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/g4tendl-1.4-jz4v4n5oytov6laqo3yw7wtu5qlpvgb6
+    llvm:
+      externals:
+      - spec: llvm@18.1.8
+        prefix: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack/linux-x86_64_v3/llvm-18.1.8-jlabyjewzdqm67c2jrmwx37lpzkvnvxf
