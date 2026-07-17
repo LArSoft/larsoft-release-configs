@@ -158,7 +158,6 @@ spack:
       require:
       - +cuda
       - cuda_arch=80
-      - ~custom-protobuf
     r-m-dd-config:
       require:
       - experiment=dune
@@ -304,8 +303,3 @@ spack:
       externals:
       - spec: dune-pardata@01.84.00
         prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
-    uboone-photon-propagation:
-      externals:
-      - spec: uboone-photon-propagation@01.01.00
-        prefix: /cvmfs/uboone.opensciencegrid.org/products/uboone_photon_propagation/v01_01_00
-
