@@ -11,19 +11,19 @@ spack:
     - included_yaml/specs-art.yaml
 
   - git: https://github.com/SBNSoftware/sbn-release-configs
-    branch: main
+    commit: bbec31e7a1309e27114261e9baa226b2f5aea6b8
     paths:
     - included_yaml/sbn-packages.yaml
     - included_yaml/sbnd-packages.yaml
     - included_yaml/icarus-packages.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
-    branch: main
+    commit: 82d2af585c9a7457f6ae3dd0c315cefe93d035ea
     paths:
     - included_yaml/dune-packages.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    branch: main
+    commit: 8e50e5ba0b46bee5a739b798130c7c0b4b19583c
     paths:
     - included_yaml/uboone_packages.yaml
 
