@@ -34,65 +34,21 @@ spack:
     - included_yaml/sbn-packages.yaml
     - included_yaml/sbnd-packages.yaml
     - included_yaml/icarus-packages.yaml
+    - included_yaml/sbn-specs.yaml
+    - included_yaml/sbnd-specs.yaml
+    - included_yaml/icarus-specs.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
     branch: main
     paths:
     - included_yaml/dune-packages.yaml
+    - included_yaml/dune-specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
     branch: main
     paths:
     - included_yaml/uboone_packages.yaml
-
-# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
-# and the git:(repo urls) and tag: or commit: included above.
-#
-  definitions:
-    - specs_dune:
-      - duneana@develop %build_compiler
-      - duneanaobj@develop %build_compiler
-      - dunecalib@develop %build_compiler
-      - dunecore@develop %build_compiler
-      - dunedaqdataformats@develop %build_compiler
-      - dunedataprep@develop %build_compiler
-      - dunedetdataformats@develop %build_compiler
-      - duneexamples@develop %build_compiler
-      - duneopdet@develop %build_compiler
-      - dunepdlegacy@develop %build_compiler
-      - duneprototypes@develop %build_compiler
-      - dunereco@develop %build_compiler
-      - dunesim@develop %build_compiler
-      - dunesw@develop %build_compiler
-      - duneutil@develop %build_compiler
-      - protoduneana@develop %build_compiler
-      - gfal2-util %build_compiler
-      - r-m-dd-config %build_compiler
-    - specs_sbn:
-      - sbnalg@develop %build_compiler
-      - sbnanaobj@develop %build_compiler
-      - sbndaq-artdaq-core@develop %build_compiler
-      - sbncode@develop %build_compiler
-      - sbnobj@develop %build_compiler
-    - specs_sbnd
-      - sbndcode@develop %build_compiler
-    - specs_icarus:
-      - icaruscode@develop %build_compiler
-      - icarus-signal-processing@develop %build_compiler
-      - icarusalg@develop %build_compiler
-    - specs_uboone:
-      - ubana@develop %build_compiler
-      - ubcore@develop %build_compiler
-      - ubcrt@develop %build_compiler
-      - ubcv@develop %build_compiler
-      - ubevt@develop %build_compiler
-      - ublite@develop %build_compiler
-      - ubobj@develop %build_compiler
-      - uboonecode@develop %build_compiler
-      - ubraw@develop %build_compiler
-      - ubreco@develop %build_compiler
-      - ubsim@develop %build_compiler
-      - ubutil@develop %build_compiler
+    - included_yaml/uboone_specs.yaml
 
   upstreams:
     cvmfs-larsoft:
@@ -121,7 +77,7 @@ spack:
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_22_00-unified-cuda-python-3_11-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_22_00-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
     all:
@@ -175,4 +131,136 @@ spack:
     trace:
       require:
       - "@:v3_23_00"
-
+    'duneana:':
+      require:
+      - "@develop"
+    'duneanaobj:':
+      require:
+      - "@develop"
+    'dunecalib:':
+      require:
+      - "@develop"
+    'dunecore:':
+      require:
+      - "@develop"
+    'dunedaqdataformats:':
+      require:
+      - "@develop"
+    'dunedataprep:':
+      require:
+      - "@develop"
+    'dunedetdataformats:':
+      require:
+      - "@develop"
+    'duneexamples:':
+      require:
+      - "@develop"
+    'duneopdet:':
+      require:
+      - "@develop"
+    'dunepdlegacy:':
+      require:
+      - "@develop"
+    'duneprototypes:':
+      require:
+      - "@develop"
+    'dunereco:':
+      require:
+      - "@develop"
+    'dunesim:':
+      require:
+      - "@develop"
+    'dunesw:':
+      require:
+      - "@develop"
+    'duneutil:':
+      require:
+      - "@develop"
+    'protoduneana:':
+      require:
+      - "@develop"
+    'sbnalg:':
+      require:
+      - '@develop'
+    'sbnanaobj:':
+      require:
+      - '@develop'
+    'sbncode:':
+      require:
+      - '@develop'
+    'sbndcode:':
+      require:
+      - '@develop'
+    'sbndaq-artdaq-core:':
+      require:
+      - "@develop"
+    'sbnobj:':
+      require:
+      - '@develop'
+    'icarus-signal-processing:':
+      require:
+      - '@develop'
+    'icaruscode:':
+      require:
+      - '@develop'
+    'icarusalg:':
+      require:
+      - '@develop'
+    'ubana:':
+      require:
+      - '@develop'
+    'ubcore:':
+      require:
+      - '@develop'
+    'ubcrt:':
+      require:
+      - '@develop'
+    'ubcv:':
+      require:
+      - '@develop'
+    'ubdl:':
+      require:
+      - '@develop'
+    'ubevt:':
+      require:
+      - '@develop'
+    'ublite:':
+      require:
+      - '@develop'
+    'ubobj:':
+      require:
+      - '@develop'
+    'uboonecode:':
+      require:
+      - '@develop'
+    'ubraw:':
+      require:
+      - '@develop'
+    'ubreco:':
+      require:
+      - '@develop'
+    'ubsim:':
+      require:
+      - '@develop'
+    sbndata:
+      externals:
+      - spec: sbndata@01_08
+        prefix: /cvmfs/sbn.opensciencegrid.org/products/sbn/sbndata/v01_08
+    sbnd-data:
+      externals:
+      - spec: sbnd-data@01_42_00
+        prefix: /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/v01_42_00
+    icarus-data:
+      externals:
+      - spec: icarus-data@10.20.03
+        prefix: /cvmfs/icarus.opensciencegrid.org/products/icarus/icarus_data/v10_20_03
+      - spec: icarus-data@10.20.04
+        prefix: /cvmfs/icarus.opensciencegrid.org/products/icarus/icarus_data/v10_20_04
+    uboonedata:
+      externals:
+      - spec: uboonedata@10_20_04
+        prefix: /cvmfs/uboone.opensciencegrid.org/products/uboonedata/v10_20_04
+    dune-pardata:
+      externals:
+      - spec: dune-pardata@01.84.00
+        prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
