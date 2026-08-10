@@ -21,7 +21,7 @@ spack:
     - included_yaml/icarus-specs.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
-    commit: 82d2af585c9a7457f6ae3dd0c315cefe93d035ea
+    commit: 56d6c9d3d36a90dcf6f0fb2e07fc9b02dd5c98bc
     paths:
     - included_yaml/dune-packages.yaml
     - included_yaml/dune-specs.yaml
