@@ -70,6 +70,7 @@ spack:
     - r-m-dd-config
     - py-srproxy
     - py-ipykernel
+    - geant4reweight
     - snakemake
   concretizer:
     unify: true
