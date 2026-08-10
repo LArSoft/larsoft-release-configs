@@ -220,7 +220,7 @@ spack:
       - '@develop'
     'ubdl:':
       require:
-      - '@develop'
+      - '@trunk'
     'ubevt:':
       require:
       - '@develop'
