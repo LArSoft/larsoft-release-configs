@@ -1,64 +1,64 @@
 packages:
   larana:
     require:
-    - '@=10.02.07'
+    - '@=10.02.08'
   larcore:
     require:
-    - '@=10.00.05'
+    - '@=10.00.06'
   larcorealg:
     require:
-    - '@=10.00.05'
+    - '@=10.00.06'
   larcoreobj:
     require:
-    - '@=10.00.02'
+    - '@=10.00.03'
   lardata:
     require:
-    - '@=10.00.18'
+    - '@=10.00.19'
   lardataalg:
     require:
-    - '@=10.02.03'
+    - '@=10.02.04'
   lardataobj:
     require:
-    - '@=10.05.02'
+    - '@=10.05.03'
   lareventdisplay:
     require:
-    - '@=10.01.07'
+    - '@=10.01.08'
   larevt:
     require:
-    - '@=10.00.21'
+    - '@=10.00.22'
   larexamples:
     require:
-    - '@=10.02.02'
+    - '@=10.02.03'
   larg4:
     require:
-    - '@=10.20.05'
+    - '@=10.20.06'
   larpandora:
     require:
-    - '@=10.04.00'
+    - '@=10.05.00'
   larpandoracontent:
     require:
-    - '@=05.02.01'
+    - '@=05.03.00'
   larreco:
     require:
-    - '@=10.06.07'
+    - '@=10.06.08'
   larrecodnn:
     require:
-    - '@=10.04.00'
+    - '@=10.05.00'
   larsim:
     require:
-    - '@=10.20.05'
+    - '@=10.20.06'
   larsimdnn:
     require:
-    - '@=10.02.05'
+    - '@=10.02.06'
   larsimrad:
     require:
-    - '@=10.01.06'
+    - '@=10.01.07'
   larsoft:
     require:
-    - '@=10.22.00'
+    - '@=10.23.00'
   larwirecell:
     require:
-    - '@=10.03.09'
+    - '@=10.04.00'
   larvecutils:
     require:
     - '@=09.04.03'
@@ -74,7 +74,7 @@ packages:
     - '@=5.0.0'
   artg4tk:
     require:
-    - '@=13.0.0'
+    - '@=13.0.1'
   marley:
     require:
     - '@=1.2.1'
