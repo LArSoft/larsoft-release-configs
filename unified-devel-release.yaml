@@ -11,7 +11,7 @@ spack:
     - included_yaml/specs-art.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.22.00
+    tag: larsoft-10.23.00
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
@@ -77,7 +77,7 @@ spack:
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_22_00-unified-cuda-python-3_11-trimmed-rc2
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_23_00-unified-cuda-python-3_11-trimmed-rc1
   view: false
   packages:
     all:
