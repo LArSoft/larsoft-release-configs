@@ -10,7 +10,7 @@ spack:
     - included_yaml/specs-art.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
-    branch: main
+    tag: dunesw-10.22.00d01-justin-01.06.04
     paths:
     - included_yaml/dune-packages.yaml
     - included_yaml/dune-specs.yaml

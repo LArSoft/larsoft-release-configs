@@ -39,13 +39,13 @@ spack:
     - included_yaml/icarus-specs.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
-    branch: main
+    tag: dunesw-10.22.00d01-justin-01.06.04
     paths:
     - included_yaml/dune-packages.yaml
     - included_yaml/dune-specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    branch: main
+    tag: uboone-10.22.00
     paths:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
