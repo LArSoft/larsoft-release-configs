@@ -69,7 +69,6 @@ spack:
     - systematicstools %build_compiler
     - r-m-dd-config
     - py-srproxy
-    - py-ipykernel
     - geant4reweight
     - snakemake
   concretizer:
