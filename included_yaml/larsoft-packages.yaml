@@ -55,7 +55,7 @@ packages:
     - '@=10.01.08'
   larsoft:
     require:
-    - '@=10.24.01'
+    - '@=10.24.00'
   larwirecell:
     require:
     - '@=10.04.00'
