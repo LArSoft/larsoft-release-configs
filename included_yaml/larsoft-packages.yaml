@@ -61,7 +61,7 @@ packages:
     - '@=10.04.00'
   larvecutils:
     require:
-    - '@=09.04.03'
+    - '@=09.04.04'
   larfinder:
     require:
     - '@develop'
