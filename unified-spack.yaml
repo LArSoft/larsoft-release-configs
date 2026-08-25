@@ -132,112 +132,112 @@ spack:
       - "@:v3_23_00"
     'duneana:':
       require:
-      - "@develop"
+      - "@git.develop"
     'duneanaobj:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunecalib:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunecore:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunedaqdataformats:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunedataprep:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunedetdataformats:':
       require:
-      - "@develop"
+      - "@git.develop"
     'duneexamples:':
       require:
-      - "@develop"
+      - "@git.develop"
     'duneopdet:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunepdlegacy:':
       require:
-      - "@develop"
+      - "@git.develop"
     'duneprototypes:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunereco:':
       require:
-      - "@develop"
+      - "@git.develop"
     'dunesim:':
       require:
       - "@git.mpd-build"
     'dunesw:':
       require:
-      - "@develop"
+      - "@git.develop"
     'duneutil:':
       require:
-      - "@develop"
+      - "@git.develop"
     'protoduneana:':
       require:
-      - "@develop"
+      - "@git.develop"
     'sbnalg:':
       require:
-      - '@develop'
+      - '@git.develop'
     'sbnanaobj:':
       require:
-      - '@develop'
+      - '@git.develop'
     'sbncode:':
       require:
-      - '@develop'
+      - '@git.develop'
     'sbndcode:':
       require:
-      - '@develop'
+      - '@git.develop'
     'sbndaq-artdaq-core:':
       require:
-      - "@develop"
+      - "@git.develop"
     'sbnobj:':
       require:
-      - '@develop'
+      - '@git.develop'
     'icarus-signal-processing:':
       require:
-      - '@develop'
+      - '@git.develop'
     'icaruscode:':
       require:
-      - '@develop'
+      - '@git.develop'
     'icarusalg:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubana:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubcore:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubcrt:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubcv:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubevt:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ublite:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubobj:':
       require:
-      - '@develop'
+      - '@git.develop'
     'uboonecode:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubraw:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubreco:':
       require:
-      - '@develop'
+      - '@git.develop'
     'ubsim:':
       require:
-      - '@develop'
+      - '@git.develop'
     sbndata:
       externals:
       - spec: sbndata@01_08
