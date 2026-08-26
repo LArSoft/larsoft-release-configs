@@ -132,13 +132,13 @@ spack:
       - "@:v3_23_00"
     'duneana:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'duneanaobj:':
       require:
-      - "@git.main"
+      - "@git.mpd-build"
     'dunecalib:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunecore:':
       require:
       - "@git.mpd-build"
@@ -153,25 +153,25 @@ spack:
       - "@git.main"
     'duneexamples:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'duneopdet:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunepdlegacy:':
       require:
       - "@git.develop"
     'duneprototypes:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunereco:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunesim:':
       require:
       - "@git.mpd-build"
     'dunesw:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'duneutil:':
       require:
       - "@git.develop"
