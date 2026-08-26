@@ -141,13 +141,13 @@ spack:
       - "@git.develop"
     'dunecore:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunedaqdataformats:':
       require:
       - "@git.main"
     'dunedataprep:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunedetdataformats:':
       require:
       - "@git.main"
