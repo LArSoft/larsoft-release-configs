@@ -168,7 +168,7 @@ spack:
       - "@git.develop"
     'dunesim:':
       require:
-      - "@git.develop"
+      - "@git.mpd-build"
     'dunesw:':
       require:
       - "@git.develop"
