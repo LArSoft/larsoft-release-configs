@@ -135,7 +135,7 @@ spack:
       - "@git.develop"
     'duneanaobj:':
       require:
-      - "@git.develop"
+      - "@git.main"
     'dunecalib:':
       require:
       - "@git.develop"
