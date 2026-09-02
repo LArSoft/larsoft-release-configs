@@ -2,18 +2,13 @@ spack:
   config:
     deprecated: true
   include:
+
   - git: https://github.com/art-framework-suite/art-release-configs
     tag: art-3.14.04
     paths:
     - included_yaml/gcc-12-toolchain.yaml
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
-
-  - git: https://github.com/DUNE/dune-release-configs
-    tag: dunesw-10.22.00d01-justin-01.06.04
-    paths:
-    - included_yaml/dune-packages.yaml
-    - included_yaml/dune-specs.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.24.00
@@ -32,6 +27,13 @@ spack:
     paths:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
+
+  - git: https://github.com/DUNE/dune-release-configs
+    tag: dunesw-10.22.00d01-justin-01.06.04
+    paths:
+    - included_yaml/dune-packages.yaml
+    - included_yaml/dune-specs.yaml
+
 
   upstreams:
     cvmfs-larsoft:

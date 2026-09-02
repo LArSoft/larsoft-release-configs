@@ -1,7 +1,6 @@
 spack:
   config:
     deprecated: true
-
   include:
 
   - git: https://github.com/art-framework-suite/art-release-configs
@@ -10,14 +9,6 @@ spack:
     - included_yaml/gcc-12-toolchain.yaml
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
-
-  - git: https://github.com/gartung/sbn-release-configs
-    branch: main
-    paths:
-    - included_yaml/sbn-packages.yaml
-    - included_yaml/sbn-specs.yaml
-    - included_yaml/sbnd-packages.yaml
-    - included_yaml/sbnd-specs.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
     tag: larsoft-10.24.00
@@ -37,6 +28,18 @@ spack:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
+  - git: https://github.com/SBNSoftware/sbn-release-configs
+    branch: main
+    paths:
+    - included_yaml/sbn-packages.yaml
+    - included_yaml/sbn-specs.yaml
+    - included_yaml/sbnd-packages.yaml
+    - included_yaml/sbnd-specs.yaml
+
+  upstreams:
+    cvmfs-larsoft:
+      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
+
 # The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
 # and the git:(repo urls) and tag: or commit: included above.
 #
@@ -47,10 +50,6 @@ spack:
     - $fife_specs
     - $specs_sbn
     - $specs_sbnd
-
-  upstreams:
-    cvmfs-larsoft:
-      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
 
   concretizer:
     unify: true
@@ -72,12 +71,12 @@ spack:
       - cxxstd=17
       target:
       - x86_64_v3
-    cuda:
-      require:
-      - "@12.6"
     python:
       require:
       - "@:3.11"
+    cuda:
+      require:
+      - "@12.6"
     geant4:
       require:
       - build_type=RelWithDebInfo

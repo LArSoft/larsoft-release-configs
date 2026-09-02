@@ -29,7 +29,7 @@ spack:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
-  - git: https://github.com/gartung/sbn-release-configs
+  - git: https://github.com/SBNSoftware/sbn-release-configs
     branch: main
     paths:
     - included_yaml/sbn-packages.yaml
@@ -37,7 +37,13 @@ spack:
     - included_yaml/icarus-packages.yaml
     - included_yaml/icarus-specs.yaml
 
+  upstreams:
+    cvmfs-larsoft:
+      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
 
+# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
+# and the git:(repo urls) and tag: or commit: included above.
+#
   specs:
     - $specs_art
     - $specs_nusofthep
@@ -45,10 +51,6 @@ spack:
     - $fife_specs
     - $specs_icarus
     - $specs_sbn
-
-  upstreams:
-    cvmfs-larsoft:
-      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
 
   concretizer:
     unify: true
@@ -242,5 +244,3 @@ spack:
       externals:
       - spec: dune-pardata@01.84.00
         prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
-
-

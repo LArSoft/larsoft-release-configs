@@ -1,7 +1,6 @@
 spack:
   config:
     deprecated: true
-
   include:
 
   - git: https://github.com/art-framework-suite/art-release-configs
@@ -35,16 +34,19 @@ spack:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
 
+  upstreams:
+    cvmfs-larsoft:
+      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
+
+# The following definitions should be defined by experiments in exp_packages.yaml and exp_specs.yaml
+# and the git:(repo urls) and tag: or commit: included above.
+#
   specs:
     - $specs_art
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
     - $specs_uboone
-
-  upstreams:
-    cvmfs-larsoft:
-      install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
 
   concretizer:
     unify: true
