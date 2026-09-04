@@ -6,7 +6,7 @@
 spack:
   specs:
   - >-
-    gcc@12.5.0 +binutils +graphite +profiled +strip ~nvptx languages=c,c++,fortran,lto %c,cxx=gcc@11.5.0
+    gcc@12.5.0 +binutils +graphite ~bootstrap +profiled +strip ~nvptx languages=c,c++,fortran,lto %c,cxx=gcc@11.5.0
   - 'binutils@:2 +gas +gold +headers +ld +lto +plugins'
   view: false
   concretizer:
