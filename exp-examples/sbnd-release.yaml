@@ -1,7 +1,6 @@
 spack:
   config:
     deprecated: true
-
   include:
 
   - git: https://github.com/art-framework-suite/art-release-configs
@@ -34,8 +33,8 @@ spack:
     paths:
     - included_yaml/sbn-packages.yaml
     - included_yaml/sbn-specs.yaml
-    - included_yaml/icarus-packages.yaml
-    - included_yaml/icarus-specs.yaml
+    - included_yaml/sbnd-packages.yaml
+    - included_yaml/sbnd-specs.yaml
 
   upstreams:
     cvmfs-larsoft:
@@ -49,15 +48,15 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $specs_icarus
     - $specs_sbn
+    - $specs_sbnd
 
   concretizer:
     unify: true
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
     all:
@@ -244,3 +243,4 @@ spack:
       externals:
       - spec: dune-pardata@01.84.00
         prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
+

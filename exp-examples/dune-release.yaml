@@ -28,13 +28,12 @@ spack:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
-  - git: https://github.com/SBNSoftware/sbn-release-configs
-    branch: main
+  - git: https://github.com/DUNE/dune-release-configs
+    tag: dunesw-10.22.00d01-justin-01.06.04
     paths:
-    - included_yaml/sbn-packages.yaml
-    - included_yaml/sbn-specs.yaml
-    - included_yaml/sbnd-packages.yaml
-    - included_yaml/sbnd-specs.yaml
+    - included_yaml/dune-packages.yaml
+    - included_yaml/dune-specs.yaml
+
 
   upstreams:
     cvmfs-larsoft:
@@ -48,15 +47,14 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $specs_sbn
-    - $specs_sbnd
+    - $specs_dune
 
   concretizer:
     unify: true
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
     all:
@@ -74,33 +72,6 @@ spack:
     python:
       require:
       - "@:3.11"
-    cuda:
-      require:
-      - "@12.6"
-    geant4:
-      require:
-      - build_type=RelWithDebInfo
-      - generator=ninja
-      - cxxstd=17
-    grpc:
-      require:
-      - build_type=RelWithDebInfo
-      - generator=ninja
-      - cxxstd=17
-    py-tensorflow:
-      require:
-      - +cuda
-      - cuda_arch=80
-    py-torch:
-      require:
-      - +cuda
-      - cuda_arch=80
-    r-m-dd-config:
-      require:
-      - experiment=dune
-    root:
-      require:
-      - +xrootd
     nusystematics:
       require:
       - "@1"
@@ -243,4 +214,3 @@ spack:
       externals:
       - spec: dune-pardata@01.84.00
         prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
-
