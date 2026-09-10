@@ -1,0 +1,8 @@
+toolchains:
+  build_compiler:
+  - spec: "%c=gcc@12 arch=x86_64_v3"
+    when: "%c"
+  - spec: "%cxx=gcc@12 arch=x86_64_v3"
+    when: "%cxx"
+  - spec: "%fortran=gcc@12 arch=x86_64_v3"
+    when: "%fortran"
