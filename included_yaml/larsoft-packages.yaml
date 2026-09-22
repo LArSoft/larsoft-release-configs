@@ -64,7 +64,7 @@ packages:
     - '@=09.04.04'
   larfinder:
     require:
-    - '@develop'
+    - '@=09.00.06'
   # LArSoft dependencies
   pandorapfa:
     require:
