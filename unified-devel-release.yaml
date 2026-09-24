@@ -11,7 +11,7 @@ spack:
     - included_yaml/specs-art.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.25.00
+    tag: larsoft-10.26.00
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
@@ -39,13 +39,13 @@ spack:
     - included_yaml/icarus-specs.yaml
 
   - git: https://github.com/DUNE/dune-release-configs
-    tag: dunesw-10.22.00d01-justin-01.06.04
+    branch: main
     paths:
     - included_yaml/dune-packages.yaml
     - included_yaml/dune-specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    tag: uboone-10.22.00
+    branch: main
     paths:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
@@ -82,7 +82,7 @@ spack:
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc2
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_26_00-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
     all:
