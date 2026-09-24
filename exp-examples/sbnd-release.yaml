@@ -44,9 +44,6 @@ spack:
 # and the git:(repo urls) and tag: or commit: included above.
 #
   specs:
-    - $specs_art
-    - $specs_nusofthep
-    - $specs_larsoft
     - $fife_specs
     - $specs_sbn
     - $specs_sbnd
