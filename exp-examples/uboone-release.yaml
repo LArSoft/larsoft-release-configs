@@ -29,7 +29,7 @@ spack:
     - included_yaml/fife_specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    branch: main
+    tag: uboone-10.26.00
     paths:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
