@@ -191,9 +191,6 @@ spack:
     'ubcv:':
       require:
       - '@develop'
-    'ubdl:':
-      require:
-      - '@develop'
     'ubevt:':
       require:
       - '@develop'

@@ -76,6 +76,10 @@ spack:
       from:
       - type: local
       - type: external
+    duplicates:
+      max_dupes:
+        genie-xsec: 2
+        genie-phyopt: 2 
   view: false
   packages:
     all:
