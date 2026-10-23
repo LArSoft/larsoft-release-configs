@@ -1,7 +1,7 @@
 packages:
   larana:
     require:
-    - '@10.03.03'
+    - '@10.04.00'
   larcore:
     require:
     - '@10.00.07'
@@ -13,7 +13,7 @@ packages:
     - '@10.00.03'
   lardata:
     require:
-    - '@10.01.00'
+    - '@10.02.00'
   lardataalg:
     require:
     - '@10.03.00'
@@ -22,40 +22,40 @@ packages:
     - '@10.05.03'
   lareventdisplay:
     require:
-    - '@10.01.13'
+    - '@10.01.14'
   larevt:
     require:
-    - '@10.00.24'
+    - '@10.00.25'
   larexamples:
     require:
-    - '@10.02.08'
+    - '@10.02.09'
   larg4:
     require:
-    - '@10.20.08'
+    - '@10.20.09'
   larpandora:
     require:
-    - '@10.07.00'
+    - '@10.08.00'
   larpandoracontent:
     require:
-    - '@05.07.00'
+    - '@05.08.00'
   larreco:
     require:
-    - '@10.07.01'
+    - '@10.07.02'
   larrecodnn:
     require:
-    - '@10.05.05'
+    - '@10.05.06'
   larsim:
     require:
-    - '@10.23.01'
+    - '@10.23.02'
   larsimdnn:
     require:
-    - '@10.02.11'
+    - '@10.02.12'
   larsimrad:
     require:
-    - '@10.01.12'
+    - '@10.01.13'
   larsoft:
     require:
-    - '@10.28.00'
+    - '@10.29.00'
   larwirecell:
     require:
     - '@10.04.05'
