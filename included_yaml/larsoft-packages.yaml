@@ -81,3 +81,6 @@ packages:
   wire-cell-toolkit:
     require:
     - '@0.37.1'
+  grpc:
+    require:
+    - '@1.50.0'
