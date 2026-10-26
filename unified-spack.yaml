@@ -121,6 +121,7 @@ spack:
       - build_type=RelWithDebInfo
       - generator=ninja
       - cxxstd=17
+      - "@:1.50.0"
     py-tensorflow:
       require:
       - +cuda
