@@ -94,6 +94,7 @@ spack:
       - cxxstd=17
       target:
       - x86_64_v3
+    gcc:
       require:
       - target=x86_64_v3
     python:
