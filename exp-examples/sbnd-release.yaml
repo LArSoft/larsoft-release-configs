@@ -17,7 +17,7 @@ spack:
     - included_yaml/larsoft-specs.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.22.01
+    tag: nusofthep-3.22.02
     paths:
     - included_yaml/nusofthep-packages.yaml
     - included_yaml/nusofthep-specs.yaml
