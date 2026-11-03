@@ -72,6 +72,9 @@ packages:
   pandorasdk:
     require:
     - '@5.1.0'
+  pandoramonitoring:
+    require:
+    - '@5.0.0'
   artg4tk:
     require:
     - '@13.0.1'
