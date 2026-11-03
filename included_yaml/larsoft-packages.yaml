@@ -1,7 +1,7 @@
 packages:
   larana:
     require:
-    - '@10.04.00'
+    - '@10.04.01'
   larcore:
     require:
     - '@10.00.07'
@@ -13,52 +13,52 @@ packages:
     - '@10.00.03'
   lardata:
     require:
-    - '@10.02.00'
+    - '@10.02.01'
   lardataalg:
     require:
-    - '@10.03.00'
+    - '@10.03.01'
   lardataobj:
     require:
-    - '@10.05.03'
+    - '@10.06.00'
   lareventdisplay:
     require:
-    - '@10.01.14'
+    - '@10.01.15'
   larevt:
     require:
-    - '@10.00.25'
+    - '@10.00.26'
   larexamples:
     require:
-    - '@10.02.09'
+    - '@10.02.10'
   larg4:
     require:
-    - '@10.20.09'
+    - '@10.20.10'
   larpandora:
     require:
-    - '@10.08.00'
+    - '@10.08.01'
   larpandoracontent:
     require:
     - '@05.08.00'
   larreco:
     require:
-    - '@10.07.02'
+    - '@10.07.03'
   larrecodnn:
     require:
-    - '@10.05.06'
+    - '@10.05.07'
   larsim:
     require:
-    - '@10.23.02'
+    - '@10.24.00'
   larsimdnn:
     require:
-    - '@10.02.12'
+    - '@10.02.13'
   larsimrad:
     require:
-    - '@10.01.13'
+    - '@10.01.14'
   larsoft:
     require:
-    - '@10.29.00'
+    - '@10.30.00'
   larwirecell:
     require:
-    - '@10.04.05'
+    - '@10.04.07'
   larvecutils:
     require:
     - '@09.04.04'
@@ -77,7 +77,7 @@ packages:
     - '@13.0.1'
   marley:
     require:
-    - '@1.2.1'
+    - '@2.1.0'
   wire-cell-toolkit:
     require:
     - '@0.37.1'
