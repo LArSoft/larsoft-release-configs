@@ -142,7 +142,7 @@ spack:
       - "@develop"
     'duneanaobj:':
       require:
-      - "@main"
+      - "@develop"
     'dunecalib:':
       require:
       - "@develop"
@@ -151,13 +151,13 @@ spack:
       - "@develop"
     'dunedaqdataformats:':
       require:
-      - "@main"
+      - "@develop"
     'dunedataprep:':
       require:
       - "@develop"
     'dunedetdataformats:':
       require:
-      - "@main"
+      - "@develop"
     'duneexamples:':
       require:
       - "@develop"
@@ -175,7 +175,7 @@ spack:
       - "@develop"
     'dunesim:':
       require:
-      - "@mpd-build"
+      - "@develop"
     'dunesw:':
       require:
       - "@develop"
