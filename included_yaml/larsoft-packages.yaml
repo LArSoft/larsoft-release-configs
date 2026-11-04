@@ -68,7 +68,7 @@ packages:
   # LArSoft dependencies
   pandorapfa:
     require:
-    - '@=5.8.0'
+    - '@=5.5.0'
   pandorasdk:
     require:
     - '@=5.1.0'
