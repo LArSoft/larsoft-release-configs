@@ -68,13 +68,13 @@ packages:
   # LArSoft dependencies
   pandorapfa:
     require:
-    - '@5.5.0'
+    - '@=5.8.0'
   pandorasdk:
     require:
-    - '@5.1.0'
+    - '@=5.1.0'
   pandoramonitoring:
     require:
-    - '@5.0.0'
+    - '@=5.0.0'
   artg4tk:
     require:
     - '@13.0.1'
