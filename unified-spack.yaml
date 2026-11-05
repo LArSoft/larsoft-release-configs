@@ -6,7 +6,6 @@ spack:
   - git: https://github.com/art-framework-suite/art-release-configs
     tag: art-3.14.04
     paths:
-    - included_yaml/gcc-12-toolchain.yaml
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
 
@@ -15,6 +14,7 @@ spack:
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
+    - included_yaml/gcc-13-toolchain.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
     tag: nusofthep-3.22.02
