@@ -1,6 +1,7 @@
 spack:
   config:
     deprecated: true
+    shared_linking: runpath
   specs:
   - 'hwloc%c,cxx=gcc'
 
