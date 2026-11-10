@@ -1,6 +1,7 @@
 spack:
   config:
     deprecated: true
+    shared_linking: runpath
   include:
 
   - git: https://github.com/art-framework-suite/art-release-configs
