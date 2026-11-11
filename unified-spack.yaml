@@ -15,7 +15,7 @@ spack:
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
-    - included_yaml/gcc-13-toolchain.yaml
+    - included_yaml/gcc-12-toolchain.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
     tag: nusofthep-3.22.02
