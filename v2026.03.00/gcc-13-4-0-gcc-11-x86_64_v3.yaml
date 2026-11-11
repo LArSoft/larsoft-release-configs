@@ -4,6 +4,9 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
+  config:
+    deprecated: true
+    shared_linking: runpath
   specs:
   - >-
     gcc@13.4.0 +binutils +bootstrap +graphite +profiled +strip ~nvptx languages=c,c++,fortran,lto %c,cxx=gcc@11.5.0
