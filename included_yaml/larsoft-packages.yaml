@@ -87,3 +87,6 @@ packages:
   grpc:
     require:
     - '@:1.50.0'
+  ppfx:
+    require:
+    - '@02.21'
