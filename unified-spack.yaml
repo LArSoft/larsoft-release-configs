@@ -106,6 +106,9 @@ spack:
       - build_type=RelWithDebInfo
       - generator=ninja
       - cxxstd=17
+    ppfx:
+      require:
+      - '@:2.21'
     grpc:
       require:
       - build_type=RelWithDebInfo
