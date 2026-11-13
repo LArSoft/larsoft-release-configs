@@ -4,62 +4,62 @@ spack:
   include:
 
   - git: https://github.com/art-framework-suite/art-release-configs
-    tag: art-3.14.04
+    branch: main
     paths:
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
 
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.32.00
+    tag: larsoft-11.00.00
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
-    - included_yaml/gcc-12-toolchain.yaml
+    - included_yaml/gcc-13-toolchain.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.22.02
+    tag: nusofthep-3.24.00
     paths:
     - included_yaml/nusofthep-packages.yaml
     - included_yaml/nusofthep-specs.yaml
 
-  - git: https://github.com/fnal-fife/fife-release-configs
-    tag: 2.8.0.4
+  - git: https://github.com/gartung/fife-release-configs
+    branch: update-reqs
     paths:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
-  - git: https://github.com/SBNSoftware/sbn-release-configs
-    branch: main
-    paths:
-    - included_yaml/sbn-packages.yaml
-    - included_yaml/sbnd-packages.yaml
-    - included_yaml/icarus-packages.yaml
-    - included_yaml/sbn-specs.yaml
-    - included_yaml/sbnd-specs.yaml
-    - included_yaml/icarus-specs.yaml
+#  - git: https://github.com/SBNSoftware/sbn-release-configs
+#    branch: main
+#    paths:
+#    - included_yaml/sbn-packages.yaml
+#    - included_yaml/sbnd-packages.yaml
+#    - included_yaml/icarus-packages.yaml
+#    - included_yaml/sbn-specs.yaml
+#    - included_yaml/sbnd-specs.yaml
+#    - included_yaml/icarus-specs.yaml
 
-  - git: https://github.com/DUNE/dune-release-configs
-    branch: main
-    paths:
-    - included_yaml/dune-packages.yaml
-    - included_yaml/dune-specs.yaml
+#  - git: https://github.com/DUNE/dune-release-configs
+#    branch: main
+#    paths:
+#    - included_yaml/dune-packages.yaml
+#    - included_yaml/dune-specs.yaml
 
-  - git: https://github.com/uboone/uboone-release-configs
-    branch: main
-    paths:
-    - included_yaml/uboone_packages.yaml
-    - included_yaml/uboone_specs.yaml
+#  - git: https://github.com/uboone/uboone-release-configs
+#    branch: main
+#    paths:
+#    - included_yaml/uboone_packages.yaml
+#    - included_yaml/uboone_specs.yaml
 
   specs:
     - $specs_art
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $specs_dune
-    - $specs_sbn
-    - $specs_sbnd
-    - $specs_icarus
-    - $specs_uboone
+#    - $specs_dune
+#    - $specs_sbn
+#    - $specs_sbnd
+#    - $specs_icarus
+#    - $specs_uboone
     - artdaq-core %build_compiler
     - nusystematics %build_compiler
     - systematicstools %build_compiler
@@ -89,7 +89,7 @@ spack:
       variants:
       - generator=ninja
       - build_type=Release
-      - cxxstd=17
+      - cxxstd=20
       target:
       - x86_64_v3
     gcc:
@@ -105,15 +105,13 @@ spack:
       require:
       - build_type=RelWithDebInfo
       - generator=ninja
-      - cxxstd=17
     ppfx:
       require:
-      - '@:2.21'
+      - '@:2.22'
     grpc:
       require:
       - build_type=RelWithDebInfo
       - generator=ninja
-      - cxxstd=17
       - "@:1.50.0"
     py-tensorflow:
       require:
@@ -268,3 +266,8 @@ spack:
       externals:
       - spec: dune-pardata@01.84.00
         prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
+
+  repos:
+    fnal_art:
+      git: https://github.com/FNALssi/fnal_art.git
+      branch: canvas-root-io-root-req
