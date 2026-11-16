@@ -266,8 +266,3 @@ spack:
       externals:
       - spec: dune-pardata@01.84.00
         prefix: /cvmfs/dune.opensciencegrid.org/products/dune/dune_pardata/v01_84_00
-
-  repos:
-    fnal_art:
-      git: https://github.com/FNALssi/fnal_art.git
-      branch: canvas-root-io-root-req
