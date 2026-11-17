@@ -136,6 +136,9 @@ spack:
     trace:
       require:
       - "@:v3_23_00"
+    intel-oneapi-tbb:
+      require:
+      - "@:2022" 
     'duneana:':
       require:
       - "@develop"
