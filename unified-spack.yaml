@@ -138,7 +138,10 @@ spack:
       - "@:v3_23_00"
     intel-oneapi-tbb:
       require:
-      - "@:2021.9.0"
+      - "@:2023.0.0"
+    'larreco:':
+      require:
+      - "@develop"
     'duneana:':
       require:
       - "@develop"
