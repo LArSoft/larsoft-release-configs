@@ -113,6 +113,12 @@ spack:
       - build_type=RelWithDebInfo
       - generator=ninja
       - "@:1.50.0"
+    re2:
+      require:
+      - "@:2023-09-01"
+    abseil-cpp:
+      require:
+      - "@:20230802"
     py-tensorflow:
       require:
       - +cuda
