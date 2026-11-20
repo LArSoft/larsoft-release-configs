@@ -60,6 +60,7 @@ spack:
 #    - $specs_sbnd
 #    - $specs_icarus
 #    - $specs_uboone
+    - larsoft~tensorflow %build_compiler
     - artdaq-core %build_compiler
     - nusystematics %build_compiler
     - systematicstools %build_compiler
@@ -127,6 +128,7 @@ spack:
       require:
       - +cuda
       - cuda_arch=80
+      - '~distributed'
     r-m-dd-config:
       require:
       - experiment=dune
