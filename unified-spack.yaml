@@ -136,7 +136,7 @@ spack:
       - '~distributed'
     r-m-dd-config:
       require:
-      - experiment=dune
+      - experiment=hypot
     root:
       require:
       - +xrootd
@@ -152,9 +152,6 @@ spack:
     intel-oneapi-tbb:
       require:
       - "@:2023.0.0"
-    r-m-dd-config:
-      requirel
-      - exp=hypot
     'duneana:':
       require:
       - "@develop"
