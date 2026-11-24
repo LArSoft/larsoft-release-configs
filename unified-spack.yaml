@@ -44,18 +44,18 @@ spack:
     - included_yaml/dune-packages.yaml
     - included_yaml/dune-specs.yaml
 
-  - git: https://github.com/uboone/uboone-release-configs
-    branch: main
-    paths:
-    - included_yaml/uboone_packages.yaml
-    - included_yaml/uboone_specs.yaml
+#  - git: https://github.com/uboone/uboone-release-configs
+#    branch: main
+#    paths:
+#    - included_yaml/uboone_packages.yaml
+#    - included_yaml/uboone_specs.yaml
 
   specs:
     - $specs_art
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-#    - $specs_dune
+    - $specs_dune
 #    - $specs_sbn
 #    - $specs_sbnd
 #    - $specs_icarus
