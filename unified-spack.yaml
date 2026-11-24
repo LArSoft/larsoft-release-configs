@@ -22,31 +22,31 @@ spack:
     - included_yaml/nusofthep-packages.yaml
     - included_yaml/nusofthep-specs.yaml
 
-  - git: https://github.com/gartung/fife-release-configs
-    branch: update-reqs
+  - git: https://github.com/fnal-fife/fife-release-configs
+    branch: main
     paths:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
-  - git: https://github.com/SBNSoftware/sbn-release-configs
-    branch: main
-    paths:
+#  - git: https://github.com/SBNSoftware/sbn-release-configs
+#    branch: main
+#    paths:
 #    - included_yaml/sbn-packages.yaml
 #    - included_yaml/sbnd-packages.yaml
 #    - included_yaml/icarus-packages.yaml
-    - included_yaml/sbn-specs.yaml
-    - included_yaml/sbnd-specs.yaml
-    - included_yaml/icarus-specs.yaml
+#    - included_yaml/sbn-specs.yaml
+#    - included_yaml/sbnd-specs.yaml
+#    - included_yaml/icarus-specs.yaml
 
-  - git: https://github.com/DUNE/dune-release-configs
-    branch: main
-    paths:
+#  - git: https://github.com/DUNE/dune-release-configs
+#    branch: main
+#    paths:
 #    - included_yaml/dune-packages.yaml
-    - included_yaml/dune-specs.yaml
+#    - included_yaml/dune-specs.yaml
 
-  - git: https://github.com/uboone/uboone-release-configs
-    branch: main
-    paths:
+#  - git: https://github.com/uboone/uboone-release-configs
+#    branch: main
+#    paths:
 #    - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
 
@@ -55,12 +55,12 @@ spack:
     - $specs_nusofthep
     - $specs_larsoft
     - $fife_specs
-    - $specs_dune
-    - $specs_sbn
-    - $specs_sbnd
-    - $specs_icarus
-    - $specs_uboone
-#    - larsoft+tensorflow %build_compiler
+#    - $specs_dune
+#    - $specs_sbn
+#    - $specs_sbnd
+#    - $specs_icarus
+#    - $specs_uboone
+    - larsoft+tensorflow %build_compiler
     - artdaq-core %build_compiler
     - nusystematics %build_compiler
     - systematicstools %build_compiler
